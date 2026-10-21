@@ -11,4 +11,5 @@
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50482</td></tr>
 <tr><td>mapping</td><td>closeMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
+<tr><td>severity</td><td>warning</td></tr>
 </table>

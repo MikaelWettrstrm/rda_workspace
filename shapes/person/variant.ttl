@@ -7,5 +7,7 @@ kbv:variantShape
     a sh:PropertyShape ;
     sh:path kbv:variant ;
     sh:nodeKind sh:IRI ;
-    skos:closeMatch <http://rdaregistry.info/Elements/a/P50412> ;
-    sh:deactivated true .
+    skos:closeMatch <http://rdaregistry.info/Elements/a/P50103> ;
+    sh:deactivated true ;
+    sh:severity sh:warning ;
+    sh:message ""Obligatoriskt om nödvändigt…". @sv." .

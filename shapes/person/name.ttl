@@ -9,4 +9,6 @@ kbv:nameShape
     sh:minCount 1 ;
     sh:maxCount 1 ;
     skos:closeMatch <http://rdaregistry.info/Elements/a/P50117> ;
-    sh:deactivated true .
+    sh:deactivated true ;
+    sh:severity sh:warning ;
+    sh:message ""Kärnelement…". @sv." .

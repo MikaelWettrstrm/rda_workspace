@@ -7,4 +7,6 @@ kbv:hasOccupationShape
     a sh:PropertyShape ;
     sh:path kbv:hasOccupation ;
     sh:nodeKind sh:IRI ;
-    skos:exactMatch <http://rdaregistry.info/Elements/a/P50104> .
+    skos:exactMatch <http://rdaregistry.info/Elements/a/P50104> ;
+    sh:severity sh:warning ;
+    sh:message ""Hämta term från SAO…". @sv" .

@@ -7,4 +7,5 @@ kbv:identifiedByShape
     a sh:PropertyShape ;
     sh:path kbv:identifiedBy ;
     sh:datatype xsd:string ;
-    skos:closeMatch <http://rdaregistry.info/Elements/a/P50094> .
+    skos:closeMatch <http://rdaregistry.info/Elements/a/P50094> ;
+    sh:severity sh:warning .

@@ -8,4 +8,6 @@ kbv:birthDateShape
     sh:path kbv:birthDate ;
     sh:datatype xsd:date ;
     sh:maxCount 1 ;
-    skos:exactMatch <http://rdaregistry.info/Elements/a/P50121> .
+    skos:exactMatch <http://rdaregistry.info/Elements/a/P50121> ;
+    sh:severity sh:warning ;
+    sh:message ""Kärnelement… Födelsetid bör anges som årtal eller fullständigt datum."@sv ." .

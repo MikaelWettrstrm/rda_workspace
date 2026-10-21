@@ -8,4 +8,5 @@ kbv:fieldOfActivityShape
     sh:path kbv:fieldOfActivity ;
     sh:nodeKind sh:IRI ;
     skos:exactMatch <http://rdaregistry.info/Elements/a/P50022> ;
-    sh:deactivated true .
+    sh:deactivated true ;
+    sh:severity sh:warning .

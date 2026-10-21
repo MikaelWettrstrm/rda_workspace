@@ -7,6 +7,8 @@ kbv:nameShape
     a sh:PropertyShape ;
     sh:path kbv:name ;
     sh:nodeKind sh:IRI ;
+    sh:minCount 1 ;
     sh:maxCount 1 ;
     skos:closeMatch <http://rdaregistry.info/Elements/a/P50041> ;
-    sh:deactivated true .
+    sh:deactivated true ;
+    sh:message ""Kärnelement…". @sv." .

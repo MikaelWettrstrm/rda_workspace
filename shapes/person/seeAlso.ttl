@@ -7,4 +7,5 @@ kbv:seeAlsoShape
     a sh:PropertyShape ;
     sh:path kbv:seeAlso ;
     sh:nodeKind sh:IRI ;
-    skos:closeMatch <http://rdaregistry.info/Elements/a/P50482> .
+    skos:closeMatch <http://rdaregistry.info/Elements/a/P50482> ;
+    sh:severity sh:warning .

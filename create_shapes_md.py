@@ -89,6 +89,12 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         if status in ["deprecated", "deferred"]:
             ttl += "    sh:deactivated true ;\n"
 
+        if severity:
+            ttl += f"    sh:severity sh:{severity} ;\n"
+
+        if message:
+            ttl += f'    sh:message "{message}" ;\n'
+
         ttl = ttl.rstrip(" ;\n") + " .\n"
 
         with open(shape_folder / f"{property_id}.ttl", "w", encoding="utf-8") as f:
@@ -99,7 +105,14 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         # Markdown
         # -------------------------------------
 
-        md = f"# {property_label}\n\n"
+        if status == "deferred":
+            md = f"# {property_label} (Deferred)\n\n"
+
+        elif status == "deprecated":
+            md = f"# {property_label} (Deprecated)\n\n"
+        
+        else:
+            md = f"# {property_label}\n\n"
 
         md += "<table>\n"
 

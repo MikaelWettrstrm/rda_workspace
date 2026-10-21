@@ -8,4 +8,6 @@ kbv:variantShape
     sh:path kbv:variant ;
     sh:nodeKind sh:IRI ;
     skos:closeMatch <http://rdaregistry.info/Elements/a/P50025> ;
-    sh:deactivated true .
+    sh:deactivated true ;
+    sh:severity sh:warning ;
+    sh:message ""Obligatoriskt om nödvändigt för identifikation eller åtkomst."@sv." .

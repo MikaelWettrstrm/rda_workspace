@@ -9,4 +9,6 @@ kbv:familyNameShape
     sh:datatype xsd:string ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    skos:exactMatch <http://rdaregistry.info/Elements/a/P50291> .
+    skos:exactMatch <http://rdaregistry.info/Elements/a/P50291> ;
+    sh:severity sh:warning ;
+    sh:message ""Kärnelement…". @sv." .

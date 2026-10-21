@@ -1,4 +1,4 @@
-# Verksamhetsområde
+# Verksamhetsområde (Deprecated)
 
 <table>
 <tr><td>shapeID</td><td>CorporateBody</td></tr>
@@ -12,4 +12,5 @@
 <tr><td>mapping</td><td>exactMatch</td></tr>
 <tr><td>status</td><td>deprecated</td></tr>
 <tr><td>comment</td><td>Use description instead</td></tr>
+<tr><td>severity</td><td>warning</td></tr>
 </table>

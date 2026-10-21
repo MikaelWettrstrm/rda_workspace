@@ -8,4 +8,5 @@ kbv:activityEndDateShape
     sh:path kbv:activityEndDate ;
     sh:datatype xsd:date ;
     sh:maxCount 1 ;
-    skos:closeMatch <http://rdaregistry.info/Elements/a/P50236> .
+    skos:closeMatch <http://rdaregistry.info/Elements/a/P50236> ;
+    sh:severity sh:warning .

@@ -16,4 +16,5 @@ kbv:PersonShape
     sh:property kbv:hasOccupationShape ;
     sh:property kbv:identifiedByShape ;
     sh:property kbv:descriptionShape ;
-    sh:property kbv:seeAlsoShape .
+    sh:property kbv:seeAlsoShape ;
+    sh:property kbv:cataloguersNoteShape .

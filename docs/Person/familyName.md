@@ -12,4 +12,7 @@
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50291</td></tr>
 <tr><td>mapping</td><td>exactMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
+<tr><td>comment</td><td>validation på entitetsnivå, inte elementnivå, t.ex. om saknas?</td></tr>
+<tr><td>severity</td><td>warning</td></tr>
+<tr><td>message</td><td>"Kärnelement…". @sv.</td></tr>
 </table>

@@ -12,4 +12,6 @@
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50098</td></tr>
 <tr><td>mapping</td><td>closeMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
+<tr><td>comment</td><td>så ihop med …starttid för att skapa ett element</td></tr>
+<tr><td>severity</td><td>warning</td></tr>
 </table>
