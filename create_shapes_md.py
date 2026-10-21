@@ -48,6 +48,8 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
 
         mapping = row.get("mapping", "")
         status = row.get("status", "")
+        severity = row.get("severity", "")
+        message = row.get("message", "")
         comment = row.get("comment", "")
 
         print("Writing:", shape_folder / f"{property_id}.ttl")
@@ -114,7 +116,9 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
             ("mapping", mapping),
             ("status", status),
             ("comment", comment),
-    ]
+            ("severity", severity),
+            ("message", message),
+        ]
 
         for label, value in rows:
             if value:
