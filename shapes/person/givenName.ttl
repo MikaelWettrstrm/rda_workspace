@@ -10,5 +10,5 @@ kbv:givenNameShape
     sh:minCount 1 ;
     sh:maxCount 1 ;
     skos:exactMatch <http://rdaregistry.info/Elements/a/P50292> ;
-    sh:severity sh:warning ;
-    sh:message ""Kärnelement…". @sv." .
+    sh:severity sh:violation ;
+    sh:message ""Obligatoriskt…". @sv." .

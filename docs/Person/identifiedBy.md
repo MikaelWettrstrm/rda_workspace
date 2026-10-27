@@ -3,6 +3,7 @@
 <table>
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>identifiedBy</td></tr>
+<tr><td>propertyLabel</td><td>Identifikator</td></tr>
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>

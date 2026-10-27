@@ -6,9 +6,9 @@
 kbv:nameShape
     a sh:PropertyShape ;
     sh:path kbv:name ;
+    sh:datatype xsd:string ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    skos:closeMatch <http://rdaregistry.info/Elements/a/P50117> ;
-    sh:deactivated true ;
-    sh:severity sh:warning ;
-    sh:message ""Kärnelement…". @sv." .
+    skos:closeMatch <http://rdaregistry.info/Elements/a/P50111> ;
+    sh:severity sh:violation ;
+    sh:message ""Obligatoriskt…". @sv." .

@@ -3,6 +3,7 @@
 <table>
 <tr><td>shapeID</td><td>CorporateBody</td></tr>
 <tr><td>propertyID</td><td>terminationDate</td></tr>
+<tr><td>propertyLabel</td><td>Tid för upphörande</td></tr>
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>

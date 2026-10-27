@@ -10,4 +10,4 @@ kbv:cataloguersNoteShape
     sh:minCount 1 ;
     skos:closeMatch <http://rdaregistry.info/Elements/w/P10406> ;
     sh:severity sh:warning ;
-    sh:message ""Obligatorisk…". @sv." .
+    sh:message ""Obligatoriskt…". @sv." .

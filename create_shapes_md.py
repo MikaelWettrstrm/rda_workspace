@@ -20,7 +20,10 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         sep=";",
         encoding="cp1252",
         dtype=str
-        ).fillna("")
+    ).fillna("")
+    
+    print(df.columns.tolist())
+    print(df.head())
 
     entity = df.iloc[0]["shapeID"]
 
@@ -51,6 +54,14 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         severity = row.get("severity", "")
         message = row.get("message", "")
         comment = row.get("comment", "")
+        definition = row.get("definition", "")
+        scope_note = row.get("scopeNote", "")
+        marc_21 = row.get("marc21", "")
+        marc_21_note = row.get("marc21Note", "")
+        modelling_note = row.get("modellingNote", "")
+        normalization_note = row.get("normalizationNote", "")
+        com_required = row.get("comRequired", "")
+        issue_link = row.get("issueLink", "")
 
         print("Writing:", shape_folder / f"{property_id}.ttl")
         print("Writing:", docs_folder / f"{property_id}.md")
@@ -119,6 +130,9 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         rows = [
             ("shapeID", entity),
             ("propertyID", property_id),
+            ("propertyLabel", property_label),
+            ("definition", definition),
+            ("scopeNote", scope_note),
             ("mandatory", mandatory),
             ("repeatable", repeatable),
             ("valueNodeType", value_node_type),
@@ -128,9 +142,16 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
             ("RDA IRI", rda_iri),
             ("mapping", mapping),
             ("status", status),
-            ("comment", comment),
             ("severity", severity),
             ("message", message),
+            ("marc21", marc_21),
+            ("marc21Note", marc_21_note),
+            ("modellingNote", modelling_note),
+            ("normalizationNote", normalization_note),
+            ("comRequired", com_required),
+            ("issueLink", issue_link),
+            ("comment", comment),
+            
         ]
 
         for label, value in rows:

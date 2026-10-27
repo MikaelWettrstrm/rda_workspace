@@ -11,5 +11,6 @@ kbv:CorporateBodyShape
     sh:property kbv:establishmentDateShape ;
     sh:property kbv:terminationDateShape ;
     sh:property kbv:descriptionShape ;
+    sh:property kbv:JurisdictionShape ;
     sh:property kbv:seeAlsoShape ;
     sh:property kbv:cataloguersNoteShape .

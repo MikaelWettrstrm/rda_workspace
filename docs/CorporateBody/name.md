@@ -1,16 +1,19 @@
-# Föredraget namn (Deferred)
+# Namn
 
 <table>
 <tr><td>shapeID</td><td>CorporateBody</td></tr>
 <tr><td>propertyID</td><td>name</td></tr>
+<tr><td>propertyLabel</td><td>Namn</td></tr>
 <tr><td>mandatory</td><td>TRUE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>
-<tr><td>valueNodeType</td><td>IRI</td></tr>
+<tr><td>valueNodeType</td><td>Literal</td></tr>
+<tr><td>valueDataType</td><td>xsd:string</td></tr>
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/name</td></tr>
 <tr><td>RDA</td><td>preferred name of corporate body</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50041</td></tr>
 <tr><td>mapping</td><td>closeMatch</td></tr>
-<tr><td>status</td><td>deferred</td></tr>
-<tr><td>comment</td><td>Consider modelling in Nomen profile. propertyID för Föredraget namn samma som för Namn</td></tr>
-<tr><td>message</td><td>"Kärnelement…". @sv.</td></tr>
+<tr><td>status</td><td>active</td></tr>
+<tr><td>severity</td><td>warning</td></tr>
+<tr><td>message</td><td>"Obligatoriskt…". @sv.</td></tr>
+<tr><td>comment</td><td>validation på entitetsnivå, inte elementnivå, t.ex. om saknas?</td></tr>
 </table>

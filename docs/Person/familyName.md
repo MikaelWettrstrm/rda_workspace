@@ -3,6 +3,7 @@
 <table>
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>familyName</td></tr>
+<tr><td>propertyLabel</td><td>Efternamn</td></tr>
 <tr><td>mandatory</td><td>TRUE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>
@@ -12,7 +13,8 @@
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50291</td></tr>
 <tr><td>mapping</td><td>exactMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
+<tr><td>severity</td><td>violation</td></tr>
+<tr><td>message</td><td>"Obligatoriskt…". @sv.</td></tr>
+<tr><td>comRequired</td><td>FALSE</td></tr>
 <tr><td>comment</td><td>validation på entitetsnivå, inte elementnivå, t.ex. om saknas?</td></tr>
-<tr><td>severity</td><td>warning</td></tr>
-<tr><td>message</td><td>"Kärnelement…". @sv.</td></tr>
 </table>

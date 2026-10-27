@@ -3,6 +3,7 @@
 <table>
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>seeAlso</td></tr>
+<tr><td>propertyLabel</td><td>Se även</td></tr>
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>IRI</td></tr>

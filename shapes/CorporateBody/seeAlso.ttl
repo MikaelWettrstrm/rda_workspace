@@ -9,4 +9,4 @@ kbv:seeAlsoShape
     sh:nodeKind sh:IRI ;
     skos:closeMatch <http://rdaregistry.info/Elements/a/P50480> ;
     sh:severity sh:warning ;
-    sh:message ""Obligatorisk…". @sv." .
+    sh:message ""Obligatoriskt…". @sv." .
