@@ -4,6 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>givenName</td></tr>
 <tr><td>propertyLabel</td><td>Förnamn</td></tr>
+<tr><td>definition</td><td>Namn som en person får vid födseln eller vid ett senare tillfälle, som ett komplement till eller i stället för ett efternamn</td></tr>
 <tr><td>mandatory</td><td>TRUE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>

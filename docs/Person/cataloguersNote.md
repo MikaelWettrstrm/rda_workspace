@@ -4,6 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>cataloguersNote</td></tr>
 <tr><td>propertyLabel</td><td>Katalogisatörens anmärkning</td></tr>
+<tr><td>definition</td><td>En manifestation som är källa för en beskrivning</td></tr>
 <tr><td>mandatory</td><td>TRUE</td></tr>
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>

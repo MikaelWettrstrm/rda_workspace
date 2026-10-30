@@ -10,11 +10,28 @@ kbv:PersonShape
     sh:property kbv:givenNameShape ;
     sh:property kbv:birthDateShape ;
     sh:property kbv:deathDateShape ;
+    sh:property kbv:lifeSpanShape ;
     sh:property kbv:activityStartDateShape ;
     sh:property kbv:activityEndDateShape ;
+    sh:property kbv:fieldOfActivityShape ;
     sh:property kbv:fullerFormOfNameShape ;
     sh:property kbv:hasOccupationShape ;
+    sh:property kbv:hasAffiliationShape ;
     sh:property kbv:identifiedByShape ;
     sh:property kbv:descriptionShape ;
+    sh:property kbv:titlesAndOtherWordsAssociatedWithANameShape ;
+    sh:property kbv:nationalityShape ;
+    sh:property kbv:birthPlaceShape ;
+    sh:property kbv:deathPlaceShape ;
+    sh:property kbv:associatedLanguageShape ;
     sh:property kbv:seeAlsoShape ;
-    sh:property kbv:cataloguersNoteShape .
+    sh:property kbv:cataloguersNoteShape ;
+    sh:property kbv:Shape ;
+    sh:property kbv:Shape ;
+    sh:property kbv:Shape ;
+    sh:property kbv:Shape ;
+    sh:property kbv:Shape ;
+    sh:property kbv:Shape ;
+    sh:property kbv:Shape ;
+    sh:property kbv:Shape ;
+    sh:property kbv:Shape .

@@ -4,6 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>familyName</td></tr>
 <tr><td>propertyLabel</td><td>Efternamn</td></tr>
+<tr><td>definition</td><td>Den del av en persons officiella namn som står sist efter förnamnet och som anger vilken familj eller släkt personen tillhör</td></tr>
 <tr><td>mandatory</td><td>TRUE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>

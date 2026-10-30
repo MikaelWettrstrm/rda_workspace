@@ -4,6 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>variant</td></tr>
 <tr><td>propertyLabel</td><td>Variantnamn</td></tr>
+<tr><td>definition</td><td>En persons namn som inte har valts som föredraget namn</td></tr>
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>IRI</td></tr>
@@ -15,5 +16,4 @@
 <tr><td>severity</td><td>warning</td></tr>
 <tr><td>message</td><td>"Obligatoriskt om nödvändigt…". @sv.</td></tr>
 <tr><td>marc21Note</td><td>I KBV finns ingen egenskap som heter Variantnamn. Variantnamn anges i Variant. Där repeteras alla egenskaper som behövs för att generera alternativa sökingångar i 400 i MARC-exporten.?</td></tr>
-<tr><td>modellingNote</td><td>Modellera om. Skapa egenskap Variantnamn</td></tr>
 </table>

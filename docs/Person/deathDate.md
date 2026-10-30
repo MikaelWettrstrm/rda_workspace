@@ -16,5 +16,6 @@
 <tr><td>status</td><td>active</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
 <tr><td>message</td><td>"Obligatoriskt… Födelsetid bör anges som årtal eller fullständigt datum."@sv .</td></tr>
+<tr><td>normalizationNote</td><td>https://api.triplydb.com/s/nFumw0bqk</td></tr>
 <tr><td>comment</td><td>validation på sträng, valueNode och valueData?</td></tr>
 </table>

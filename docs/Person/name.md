@@ -4,6 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>name</td></tr>
 <tr><td>propertyLabel</td><td>Namn</td></tr>
+<tr><td>definition</td><td>En persons namn</td></tr>
 <tr><td>scopeNote</td><td>Namn i rak följd… namn som består av …</td></tr>
 <tr><td>mandatory</td><td>TRUE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>

@@ -14,4 +14,5 @@
 <tr><td>mapping</td><td>closeMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
+<tr><td>modellingNote</td><td>Ange URI direkt under Exakt match</td></tr>
 </table>
