@@ -9,4 +9,5 @@ kbv:activityStartDateShape
     sh:datatype xsd:date ;
     sh:maxCount 1 ;
     skos:closeMatch <http://rdaregistry.info/Elements/a/P50098> ;
+    sh:deactivated true ;
     sh:severity sh:warning .

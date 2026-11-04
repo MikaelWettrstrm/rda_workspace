@@ -7,4 +7,5 @@ kbv:titlesAndOtherWordsAssociatedWithANameShape
     a sh:PropertyShape ;
     sh:path kbv:titlesAndOtherWordsAssociatedWithAName ;
     sh:datatype xsd:string ;
-    skos:exactMatch <http://rdaregistry.info/Elements/a/P50110> .
+    skos:exactMatch <http://rdaregistry.info/Elements/a/P50110> ;
+    sh:deactivated true .

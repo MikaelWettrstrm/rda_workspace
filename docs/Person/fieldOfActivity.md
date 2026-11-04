@@ -4,7 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>fieldOfActivity</td></tr>
 <tr><td>propertyLabel</td><td>Verksamhetsområde</td></tr>
-<tr><td>definition</td><td>Ett verksamhetsområde, ett expertområde eller dylikt som en person ägnar sig åt</td></tr>
+<tr><td>definition</td><td>Personens verksamhetsområde, expertområde eller dylikt</td></tr>
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/fieldOfActivity</td></tr>
 <tr><td>RDA</td><td>field of activity of person</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50100</td></tr>

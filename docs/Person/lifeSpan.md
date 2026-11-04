@@ -1,4 +1,4 @@
-# Födelsetid och/eller dödstid
+# Födelsetid och/eller dödstid (Deferred)
 
 <table>
 <tr><td>shapeID</td><td>Person</td></tr>
@@ -12,5 +12,6 @@
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/lifeSpan</td></tr>
 <tr><td>RDA</td><td>related timespan of person</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50347</td></tr>
+<tr><td>status</td><td>deferred</td></tr>
 <tr><td>modellingNote</td><td>Tas bort och ersätts av två egenskaper: birthDate och deathDate</td></tr>
 </table>

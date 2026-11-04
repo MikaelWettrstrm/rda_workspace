@@ -7,4 +7,5 @@ kbv:birthPlaceShape
     a sh:PropertyShape ;
     sh:path kbv:birthPlace ;
     sh:maxCount 1 ;
-    skos:exactMatch <http://rdaregistry.info/Elements/a/P50119> .
+    skos:exactMatch <http://rdaregistry.info/Elements/a/P50119> ;
+    sh:deactivated true .

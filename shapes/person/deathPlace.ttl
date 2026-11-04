@@ -7,4 +7,5 @@ kbv:deathPlaceShape
     a sh:PropertyShape ;
     sh:path kbv:deathPlace ;
     sh:maxCount 1 ;
-    skos:exactMatch <http://rdaregistry.info/Elements/a/P50118> .
+    skos:exactMatch <http://rdaregistry.info/Elements/a/P50118> ;
+    sh:deactivated true .

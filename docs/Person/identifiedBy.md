@@ -1,9 +1,10 @@
-# Identifikator
+# Identifikator (Deferred)
 
 <table>
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>identifiedBy</td></tr>
 <tr><td>propertyLabel</td><td>Identifikator</td></tr>
+<tr><td>definition</td><td>Kod, nummer eller annan sträng som identifierar en person</td></tr>
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>
@@ -12,7 +13,8 @@
 <tr><td>RDA</td><td>identifier for person</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50094</td></tr>
 <tr><td>mapping</td><td>closeMatch</td></tr>
-<tr><td>status</td><td>active</td></tr>
+<tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
 <tr><td>modellingNote</td><td>Ange URI direkt under Exakt match</td></tr>
+<tr><td>comment</td><td>Vår identifikator (Libris-id) genereras i Adminmetadata, andra identifikatorer anges i Identifikator?</td></tr>
 </table>

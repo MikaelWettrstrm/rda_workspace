@@ -19,5 +19,5 @@
 <tr><td>message</td><td>"Obligatoriskt…". @sv.</td></tr>
 <tr><td>comRequired</td><td>TRUE</td></tr>
 <tr><td>issueLink</td><td>https://kbse.atlassian.net/jira/</td></tr>
-<tr><td>comment</td><td>validation på entitetsnivå, inte elementnivå, t.ex. om saknas? Hur skulle det bli om man angav förnamn och efternamn i rak följd?</td></tr>
+<tr><td>comment</td><td>validation på entitetsnivå, inte elementnivå, t.ex. om saknas? Hur skulle det bli om man angav förnamn och efternamn i rak följd? Diskussion krävs om Föredraget namn</td></tr>
 </table>

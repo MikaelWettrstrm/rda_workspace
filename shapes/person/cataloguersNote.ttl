@@ -8,6 +8,6 @@ kbv:cataloguersNoteShape
     sh:path kbv:cataloguersNote ;
     sh:datatype xsd:string ;
     sh:minCount 1 ;
-    skos:closeMatch <http://rdaregistry.info/Elements/w/P10406> ;
+    sh:deactivated true ;
     sh:severity sh:warning ;
     sh:message ""Obligatorisk…". @sv." .

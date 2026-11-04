@@ -4,7 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>variant</td></tr>
 <tr><td>propertyLabel</td><td>Variantnamn</td></tr>
-<tr><td>definition</td><td>En persons namn som inte har valts som föredraget namn</td></tr>
+<tr><td>definition</td><td>Namn som inte har valts som personens föredragna namn</td></tr>
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>IRI</td></tr>

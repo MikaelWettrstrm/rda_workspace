@@ -4,7 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>associatedLanguage</td></tr>
 <tr><td>propertyLabel</td><td>Språk</td></tr>
-<tr><td>definition</td><td>Ett språk som en person använder i sin kommunikation</td></tr>
+<tr><td>definition</td><td>Språket eller språken som personen använder</td></tr>
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>

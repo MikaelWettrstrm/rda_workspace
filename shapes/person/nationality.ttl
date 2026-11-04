@@ -6,4 +6,5 @@
 kbv:nationalityShape
     a sh:PropertyShape ;
     sh:path kbv:nationality ;
-    sh:nodeKind sh:IRI .
+    sh:nodeKind sh:IRI ;
+    sh:deactivated true .
