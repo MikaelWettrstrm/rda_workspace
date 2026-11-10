@@ -11,4 +11,4 @@ kbv:nameShape
     sh:maxCount 1 ;
     skos:closeMatch <http://rdaregistry.info/Elements/a/P50041> ;
     sh:severity sh:warning ;
-    sh:message '"Obligatoriskt…". @sv."' .
+    sh:message ""Obligatoriskt…". @sv." .

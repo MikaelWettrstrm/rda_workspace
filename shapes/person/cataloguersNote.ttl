@@ -10,4 +10,4 @@ kbv:cataloguersNoteShape
     sh:minCount 1 ;
     sh:deactivated true ;
     sh:severity sh:warning ;
-    sh:message '"Obligatorisk…". @sv."' .
+    sh:message ""Obligatorisk…". @sv." .
