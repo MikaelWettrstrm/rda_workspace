@@ -15,12 +15,4 @@ kbv:PersonShape
     sh:property kbv:hasAffiliationShape ;
     sh:property kbv:descriptionShape ;
     sh:property kbv:associatedLanguageShape ;
-    sh:property kbv:seeAlsoShape ;
-    sh:property kbv:Shape ;
-    sh:property kbv:Shape ;
-    sh:property kbv:Shape ;
-    sh:property kbv:Shape ;
-    sh:property kbv:Shape ;
-    sh:property kbv:Shape ;
-    sh:property kbv:Shape ;
-    sh:property kbv:Shape .
+    sh:property kbv:seeAlsoShape .

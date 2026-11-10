@@ -104,7 +104,7 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
             ttl += f"    sh:severity sh:{severity} ;\n"
 
         if message:
-            ttl += f'    sh:message "{message}" ;\n'
+            ttl += f'    sh:message "{message}"@sv ;\n'
 
         ttl = ttl.rstrip(" ;\n") + " .\n"
 

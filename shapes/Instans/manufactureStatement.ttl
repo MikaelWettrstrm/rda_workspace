@@ -11,4 +11,4 @@ kbv:manufactureStatementShape
     skos:exactMatch <http://rdaregistry.info/Elements/m/P30287> ;
     sh:deactivated true ;
     sh:severity sh:violation ;
-    sh:message ""Obligatoriskt…". @sv." .
+    sh:message "Obligatoriskt…"@sv .

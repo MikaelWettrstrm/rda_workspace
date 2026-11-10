@@ -7,4 +7,5 @@ kbv:manifestationStatementShape
     a sh:PropertyShape ;
     sh:path kbv:manifestationStatement ;
     sh:datatype xsd:string ;
-    sh:maxCount 1 .
+    sh:maxCount 1 ;
+    sh:message "Skriv meddelande så här."@sv .

@@ -10,4 +10,4 @@ kbv:variantShape
     skos:closeMatch <http://rdaregistry.info/Elements/a/P50025> ;
     sh:deactivated true ;
     sh:severity sh:warning ;
-    sh:message ""Obligatoriskt om nödvändigt för identifikation eller åtkomst."@sv." .
+    sh:message "Obligatoriskt om nödvändigt för identifikation eller åtkomst."@sv .

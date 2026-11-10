@@ -13,5 +13,5 @@
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/w/P10402</td></tr>
 <tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
-<tr><td>message</td><td>"Obligatorisk…". @sv.</td></tr>
+<tr><td>message</td><td>Obligatorisk…</td></tr>
 </table>

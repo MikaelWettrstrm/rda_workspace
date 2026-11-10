@@ -16,7 +16,7 @@
 <tr><td>mapping</td><td>closeMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
 <tr><td>severity</td><td>violation</td></tr>
-<tr><td>message</td><td>"Obligatoriskt…". @sv.</td></tr>
+<tr><td>message</td><td>Obligatoriskt…</td></tr>
 <tr><td>comRequired</td><td>TRUE</td></tr>
 <tr><td>issueLink</td><td>https://kbse.atlassian.net/jira/</td></tr>
 <tr><td>comment</td><td>validation på entitetsnivå, inte elementnivå, t.ex. om saknas? Hur skulle det bli om man angav förnamn och efternamn i rak följd? Diskussion krävs om Föredraget namn</td></tr>

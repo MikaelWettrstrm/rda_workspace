@@ -14,5 +14,5 @@
 <tr><td>mapping</td><td>closeMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
-<tr><td>message</td><td>"Obligatoriskt…". @sv.</td></tr>
+<tr><td>message</td><td>Obligatoriskt…</td></tr>
 </table>

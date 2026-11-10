@@ -15,7 +15,7 @@
 <tr><td>mapping</td><td>exactMatch</td></tr>
 <tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>violation</td></tr>
-<tr><td>message</td><td>"Obligatoriskt…". @sv.</td></tr>
+<tr><td>message</td><td>Obligatoriskt…</td></tr>
 <tr><td>marc21</td><td>881 $h Obs! finns 2 i RDA, se kommentar</td></tr>
 <tr><td>comRequired</td><td>TRUE</td></tr>
 <tr><td>issueLink</td><td>https://kbse.atlassian.net/jira/</td></tr>

@@ -17,6 +17,6 @@
 <tr><td>severity</td><td>warning</td></tr>
 <tr><td>marc21</td><td>046 $s</td></tr>
 <tr><td>modellingNote</td><td>slå ihop med sluttid för att skapa ett element</td></tr>
-<tr><td>normalizationNote</td><td>Inte använd? https://api.triplydb.com/s/t4tFsCpoK</td></tr>
+<tr><td>normalizationNote</td><td>Inte mycket använd? https://api.triplydb.com/s/t4tFsCpoK ; https://api.triplydb.com/s/hcUnfPvJr</td></tr>
 <tr><td>comment</td><td>anges om man inte känner till exakt födelse- och/eller dödsår?</td></tr>
 </table>
