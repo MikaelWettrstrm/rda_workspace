@@ -11,4 +11,4 @@ kbv:givenNameShape
     sh:maxCount 1 ;
     skos:exactMatch <http://rdaregistry.info/Elements/a/P50292> ;
     sh:severity sh:violation ;
-    sh:message ""Obligatoriskt…". @sv." .
+    sh:message '"Obligatoriskt…". @sv."' .
