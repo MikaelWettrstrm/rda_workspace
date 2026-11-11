@@ -13,6 +13,8 @@ PREFIXES = """@prefix sh:   <http://www.w3.org/ns/shacl#> .
 
 """
 
+entities = []
+
 for csv_file in ENTITIES_DIR.glob("*.csv"):
 
     df = pd.read_csv(
@@ -21,19 +23,21 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         encoding="cp1252",
         dtype=str
     ).fillna("")
-    
-    print(df.columns.tolist())
-    print(df.head())
 
     entity = df.iloc[0]["shapeID"]
+    entities.append(entity)
 
     shape_folder = SHAPES_DIR / entity
     docs_folder = DOCS_DIR / entity
+    
+    print(df.columns.tolist())
+    print(df.head())
 
     shape_folder.mkdir(parents=True, exist_ok=True)
     docs_folder.mkdir(parents=True, exist_ok=True)
 
     node_shape_properties = []
+    entity_index_rows = []
 
     for _, row in df.iterrows():
 
@@ -51,6 +55,10 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
 
         mapping = row.get("mapping", "")
         status = row.get("status", "")
+        entity_index_rows.append(
+            (property_id, property_label, 
+             status, mapping, mandatory, repeatable)
+        )
         severity = row.get("severity", "")
         message = row.get("message", "")
         comment = row.get("comment", "")
@@ -189,3 +197,79 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         f.write(node_ttl)
 
     print("Created:", shape_folder / "_EntityShape.ttl")
+
+    # -------------------------------------
+    # Entity index
+    # -------------------------------------
+
+    active_count = (df["status"] == "active").sum()
+    deferred_count = (df["status"] == "deferred").sum()
+    deprecated_count = (df["status"] == "deprecated").sum()
+
+    total_count = len(df)
+
+    in_scope = active_count + deferred_count
+
+    completion = (
+        round(active_count * 100 / in_scope)
+        if in_scope > 0
+        else 100
+    )
+
+    filled = round(completion / 10)
+    bar = "█" * filled + "░" * (10 - filled)
+
+    entity_md = f"# {entity}\n\n"
+
+    entity_md += (
+        f"**Completion:** "
+        f"{bar} {completion}%\n\n"
+    )
+
+    entity_md += "## Status overview\n\n"
+
+    entity_md += "| Status | Count |\n"
+    entity_md += "| --- | --- |\n"
+    entity_md += f"| Total | {total_count} |\n"
+    entity_md += f"| Active | {active_count} |\n"
+    entity_md += f"| Deferred | {deferred_count} |\n"
+    entity_md += f"| Deprecated | {deprecated_count} |\n\n"
+
+    entity_md += "## Properties\n\n"
+
+    entity_md += (
+        "| Property | Label | Status | "
+        "Mapping | Mandatory | Repeatable |\n"
+    )
+
+    entity_md += (
+        "| --- | --- | --- | "
+        "--- | --- | --- |\n"
+    )
+
+    for (
+        prop_id,
+        prop_label,
+        status,
+        mapping,
+        mandatory,
+        repeatable,
+    ) in entity_index_rows:
+
+        entity_md += (
+            f"| [{prop_id}]({prop_id}.md)"
+            f" | {prop_label}"
+            f" | {status}"
+            f" | {mapping}"
+            f" | {mandatory}"
+            f" | {repeatable} |\n"
+        )
+
+    with open(
+        docs_folder / "index.md",
+        "w",
+        encoding="utf-8"
+    ) as f:
+        f.write(entity_md)
+
+    print("Created:", docs_folder / "index.md")
