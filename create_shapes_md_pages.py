@@ -261,6 +261,10 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         mapping,
         mandatory,
         repeatable,
+        rdaLabel,
+        status,
+        marc21,
+        modellingNote
     ) in entity_index_rows:
 
         entity_html += (
@@ -271,6 +275,10 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
             f"<td>{mapping}</td>"
             f"<td>{mandatory}</td>"
             f"<td>{repeatable}</td>"
+            f"<td>{rdaLabel}</td>"
+            f"<td>{status}</td>"
+            f"<td>{marc21}</td>"
+            f"<td>{modellingNote}</td>"
             f"</tr>\n"
         )
 
