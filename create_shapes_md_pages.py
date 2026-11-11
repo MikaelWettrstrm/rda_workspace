@@ -55,10 +55,6 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
 
         mapping = row.get("mapping", "")
         status = row.get("status", "")
-        entity_index_rows.append(
-            (property_id, property_label, 
-             status, mapping, mandatory, repeatable)
-        )
         severity = row.get("severity", "")
         message = row.get("message", "")
         comment = row.get("comment", "")
@@ -70,6 +66,24 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         normalization_note = row.get("normalizationNote", "")
         com_required = row.get("comRequired", "")
         issue_link = row.get("issueLink", "")
+
+        entity_index_rows.append(
+            (
+                property_id,
+                property_label,
+                status,
+                mapping,
+                mandatory,
+                repeatable,
+                rda_label,
+                marc_21,
+                marc_21_note,
+                modelling_note,
+                issue_link,
+                comment,
+                scope_note
+    )
+)
 
         print("Writing:", shape_folder / f"{property_id}.ttl")
         print("Writing:", docs_folder / f"{property_id}.md")
@@ -158,8 +172,7 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
             ("normalizationNote", normalization_note),
             ("comRequired", com_required),
             ("issueLink", issue_link),
-            ("comment", comment),
-            
+            ("comment", comment)
         ]
 
         for label, value in rows:
@@ -231,6 +244,14 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
 
 <p><strong>Completion:</strong> {bar} {completion}%</p>
 
+<p>
+📝 Modelling note |
+📖 Scope note |
+🏷️ MARC 21 note |
+💬 Comment |
+🔗 Issue link
+</p>
+
 <h2>Status overview</h2>
 
 <table border="1">
@@ -251,6 +272,9 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
 <th>Mapping</th>
 <th>Mandatory</th>
 <th>Repeatable</th>
+<th>RDA Label</th>
+<th>MARC 21</th>
+<th>Notes</th>
 </tr>
 """
 
@@ -261,11 +285,31 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         mapping,
         mandatory,
         repeatable,
-        rdaLabel,
-        status,
-        marc21,
-        modellingNote
+        rda_label,
+        marc_21,
+        marc_21_note,
+        modelling_note,
+        issue_link,
+        comment,
+        scope_note
     ) in entity_index_rows:
+
+        notes = ""
+
+        if modelling_note:
+           notes += f"<a href='{prop_id}.md'>📝</a> "
+
+        if issue_link:
+            notes += f"<a href='{issue_link}' target='_blank'>🔗</a> "
+
+        if comment:
+            notes += f"<a href='{prop_id}.md'>💬</a> "
+
+        if scope_note:
+            notes += f"<a href='{prop_id}.md'>📖</a> "
+
+        if marc_21_note:
+            notes += f"<a href='{prop_id}.md'>🏷️</a> "
 
         entity_html += (
             f"<tr>"
@@ -275,10 +319,9 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
             f"<td>{mapping}</td>"
             f"<td>{mandatory}</td>"
             f"<td>{repeatable}</td>"
-            f"<td>{rdaLabel}</td>"
-            f"<td>{status}</td>"
-            f"<td>{marc21}</td>"
-            f"<td>{modellingNote}</td>"
+            f"<td>{rda_label}</td>"
+            f"<td>{marc_21}</td>"
+            f"<td>{notes}</td>"
             f"</tr>\n"
         )
 

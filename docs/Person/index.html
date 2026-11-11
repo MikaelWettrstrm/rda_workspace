@@ -10,6 +10,14 @@
 
 <p><strong>Completion:</strong> ████░░░░░░ 42%</p>
 
+<p>
+📝 Modelling note |
+📖 Scope note |
+🏷️ MARC 21 note |
+💬 Comment |
+🔗 Issue link
+</p>
+
 <h2>Status overview</h2>
 
 <table border="1">
@@ -30,32 +38,35 @@
 <th>Mapping</th>
 <th>Mandatory</th>
 <th>Repeatable</th>
+<th>RDA Label</th>
+<th>MARC 21</th>
+<th>Notes</th>
 </tr>
-<tr><td><a href='name.md'>name</a></td><td>Namn</td><td>active</td><td>closeMatch</td><td>TRUE</td><td>FALSE</td></tr>
-<tr><td><a href='familyName.md'>familyName</a></td><td>Efternamn</td><td>active</td><td>exactMatch</td><td>TRUE</td><td>FALSE</td></tr>
-<tr><td><a href='givenName.md'>givenName</a></td><td>Förnamn</td><td>active</td><td>exactMatch</td><td>TRUE</td><td>FALSE</td></tr>
-<tr><td><a href='birthDate.md'>birthDate</a></td><td>Födelsedatum</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td></tr>
-<tr><td><a href='deathDate.md'>deathDate</a></td><td>Dödsdatum</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td></tr>
-<tr><td><a href='lifeSpan.md'>lifeSpan</a></td><td>Födelsetid och/eller dödstid</td><td>deferred</td><td></td><td>FALSE</td><td>FALSE</td></tr>
-<tr><td><a href='activityStartDate.md'>activityStartDate</a></td><td>Verksamhetens starttid</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>FALSE</td></tr>
-<tr><td><a href='activityEndDate.md'>activityEndDate</a></td><td>Verksamhetens sluttid</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>FALSE</td></tr>
-<tr><td><a href='fieldOfActivity.md'>fieldOfActivity</a></td><td>Verksamhetsområde</td><td>active</td><td>exactMatch</td><td></td><td></td></tr>
-<tr><td><a href='fullerFormOfName.md'>fullerFormOfName</a></td><td>Fullständig namnform</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td></tr>
-<tr><td><a href='hasOccupation.md'>hasOccupation</a></td><td>Yrke eller sysselsättning</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td></tr>
-<tr><td><a href='hasAffiliation.md'>hasAffiliation</a></td><td>Organisatorisk tillhörighet</td><td></td><td></td><td>FALSE</td><td>TRUE</td></tr>
-<tr><td><a href='identifiedBy.md'>identifiedBy</a></td><td>Identifikator</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td></tr>
-<tr><td><a href='description.md'>description</a></td><td>Beskrivning</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td></tr>
-<tr><td><a href='titlesAndOtherWordsAssociatedWithAName.md'>titlesAndOtherWordsAssociatedWithAName</a></td><td>Titel eller övrig beteckning</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td></tr>
-<tr><td><a href='hasOtherAttributes.md'>hasOtherAttributes</a></td><td>Övrig beteckning</td><td>deferred</td><td></td><td></td><td></td></tr>
-<tr><td><a href='titleOfPerson.md'>titleOfPerson</a></td><td>Titel/officiell rang för kunglig, adlig eller religiös person</td><td>deferred</td><td></td><td></td><td></td></tr>
-<tr><td><a href='nationality.md'>nationality</a></td><td>Nationalitet/Verksamhetsland</td><td>deferred</td><td></td><td>FALSE</td><td>TRUE</td></tr>
-<tr><td><a href='birthPlace.md'>birthPlace</a></td><td>Födelseplats</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td></tr>
-<tr><td><a href='deathPlace.md'>deathPlace</a></td><td>Dödsplats</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td></tr>
-<tr><td><a href='associatedLanguage.md'>associatedLanguage</a></td><td>Språk</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td></tr>
-<tr><td><a href='seeAlso.md'>seeAlso</a></td><td>Se även</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td></tr>
-<tr><td><a href='variant.md'>variant</a></td><td>Variantnamn</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td></tr>
-<tr><td><a href='cataloguersNote.md'>cataloguersNote</a></td><td>Katalogisatörens anmärkning</td><td>deferred</td><td></td><td>TRUE</td><td>TRUE</td></tr>
-<tr><td><a href='sourceConsulted.md'>sourceConsulted</a></td><td>Konsulterad källa</td><td>deferred</td><td></td><td></td><td></td></tr>
+<tr><td><a href='name.md'>name</a></td><td>Namn</td><td>active</td><td>closeMatch</td><td>TRUE</td><td>FALSE</td><td>name of person</td><td></td><td><a href='https://kbse.atlassian.net/jira/' target='_blank'>🔗</a> <a href='name.md'>💬</a> <a href='name.md'>📖</a> </td></tr>
+<tr><td><a href='familyName.md'>familyName</a></td><td>Efternamn</td><td>active</td><td>exactMatch</td><td>TRUE</td><td>FALSE</td><td>surname</td><td></td><td><a href='familyName.md'>💬</a> </td></tr>
+<tr><td><a href='givenName.md'>givenName</a></td><td>Förnamn</td><td>active</td><td>exactMatch</td><td>TRUE</td><td>FALSE</td><td>given name</td><td></td><td><a href='givenName.md'>💬</a> </td></tr>
+<tr><td><a href='birthDate.md'>birthDate</a></td><td>Födelsedatum</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td><td>date of birth</td><td></td><td><a href='birthDate.md'>📝</a> <a href='birthDate.md'>💬</a> </td></tr>
+<tr><td><a href='deathDate.md'>deathDate</a></td><td>Dödsdatum</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td><td>date of death</td><td></td><td><a href='deathDate.md'>💬</a> </td></tr>
+<tr><td><a href='lifeSpan.md'>lifeSpan</a></td><td>Födelsetid och/eller dödstid</td><td>deferred</td><td></td><td>FALSE</td><td>FALSE</td><td>related timespan of person</td><td></td><td><a href='lifeSpan.md'>📝</a> </td></tr>
+<tr><td><a href='activityStartDate.md'>activityStartDate</a></td><td>Verksamhetens starttid</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>FALSE</td><td>period of activity of person</td><td>046 $s</td><td><a href='activityStartDate.md'>📝</a> <a href='activityStartDate.md'>💬</a> </td></tr>
+<tr><td><a href='activityEndDate.md'>activityEndDate</a></td><td>Verksamhetens sluttid</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>FALSE</td><td>period of activity of person</td><td>046 $t</td><td><a href='activityEndDate.md'>📝</a> <a href='activityEndDate.md'>💬</a> </td></tr>
+<tr><td><a href='fieldOfActivity.md'>fieldOfActivity</a></td><td>Verksamhetsområde</td><td>active</td><td>exactMatch</td><td></td><td></td><td>field of activity of person</td><td>372 $a $0 $1</td><td><a href='fieldOfActivity.md'>💬</a> </td></tr>
+<tr><td><a href='fullerFormOfName.md'>fullerFormOfName</a></td><td>Fullständig namnform</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td><td>fuller form of name</td><td></td><td></td></tr>
+<tr><td><a href='hasOccupation.md'>hasOccupation</a></td><td>Yrke eller sysselsättning</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td><td>profession or occupation</td><td></td><td><a href='hasOccupation.md'>📝</a> <a href='hasOccupation.md'>💬</a> <a href='hasOccupation.md'>🏷️</a> </td></tr>
+<tr><td><a href='hasAffiliation.md'>hasAffiliation</a></td><td>Organisatorisk tillhörighet</td><td></td><td></td><td>FALSE</td><td>TRUE</td><td>person member of corporate body</td><td></td><td><a href='hasAffiliation.md'>💬</a> </td></tr>
+<tr><td><a href='identifiedBy.md'>identifiedBy</a></td><td>Identifikator</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td><td>identifier for person</td><td></td><td><a href='identifiedBy.md'>📝</a> <a href='identifiedBy.md'>💬</a> </td></tr>
+<tr><td><a href='description.md'>description</a></td><td>Beskrivning</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td><td>note on person</td><td></td><td><a href='description.md'>💬</a> </td></tr>
+<tr><td><a href='titlesAndOtherWordsAssociatedWithAName.md'>titlesAndOtherWordsAssociatedWithAName</a></td><td>Titel eller övrig beteckning</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td><td>term of rank or honour or office</td><td>X00$c ; 368 $c $d</td><td><a href='titlesAndOtherWordsAssociatedWithAName.md'>📝</a> <a href='titlesAndOtherWordsAssociatedWithAName.md'>📖</a> <a href='titlesAndOtherWordsAssociatedWithAName.md'>🏷️</a> </td></tr>
+<tr><td><a href='hasOtherAttributes.md'>hasOtherAttributes</a></td><td>Övrig beteckning</td><td>deferred</td><td></td><td></td><td></td><td></td><td>368 $c</td><td><a href='hasOtherAttributes.md'>🏷️</a> </td></tr>
+<tr><td><a href='titleOfPerson.md'>titleOfPerson</a></td><td>Titel/officiell rang för kunglig, adlig eller religiös person</td><td>deferred</td><td></td><td></td><td></td><td></td><td>368 $d</td><td><a href='titleOfPerson.md'>🏷️</a> </td></tr>
+<tr><td><a href='nationality.md'>nationality</a></td><td>Nationalitet/Verksamhetsland</td><td>deferred</td><td></td><td>FALSE</td><td>TRUE</td><td>country associated with person</td><td></td><td><a href='nationality.md'>📝</a> <a href='nationality.md'>💬</a> <a href='nationality.md'>🏷️</a> </td></tr>
+<tr><td><a href='birthPlace.md'>birthPlace</a></td><td>Födelseplats</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td><td>place of birth</td><td></td><td><a href='birthPlace.md'>💬</a> </td></tr>
+<tr><td><a href='deathPlace.md'>deathPlace</a></td><td>Dödsplats</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td><td>place of death</td><td></td><td><a href='deathPlace.md'>💬</a> </td></tr>
+<tr><td><a href='associatedLanguage.md'>associatedLanguage</a></td><td>Språk</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td><td>language of person</td><td></td><td><a href='associatedLanguage.md'>💬</a> </td></tr>
+<tr><td><a href='seeAlso.md'>seeAlso</a></td><td>Se även</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td><td>related entity of person</td><td></td><td><a href='seeAlso.md'>📝</a> </td></tr>
+<tr><td><a href='variant.md'>variant</a></td><td>Variantnamn</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td><td>variant name of person</td><td></td><td><a href='variant.md'>🏷️</a> </td></tr>
+<tr><td><a href='cataloguersNote.md'>cataloguersNote</a></td><td>Katalogisatörens anmärkning</td><td>deferred</td><td></td><td>TRUE</td><td>TRUE</td><td>note on metadata work</td><td></td><td></td></tr>
+<tr><td><a href='sourceConsulted.md'>sourceConsulted</a></td><td>Konsulterad källa</td><td>deferred</td><td></td><td></td><td></td><td>source consulted</td><td></td><td><a href='sourceConsulted.md'>💬</a> </td></tr>
 
 </table>
 
