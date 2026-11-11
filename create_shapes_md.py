@@ -219,33 +219,40 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
     filled = round(completion / 10)
     bar = "█" * filled + "░" * (10 - filled)
 
-    entity_md = f"# {entity}\n\n"
+    entity_html = f"""
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{entity}</title>
+</head>
+<body>
 
-    entity_md += (
-        f"**Completion:** "
-        f"{bar} {completion}%\n\n"
-    )
+<h1>{entity}</h1>
 
-    entity_md += "## Status overview\n\n"
+<p><strong>Completion:</strong> {bar} {completion}%</p>
 
-    entity_md += "| Status | Count |\n"
-    entity_md += "| --- | --- |\n"
-    entity_md += f"| Total | {total_count} |\n"
-    entity_md += f"| Active | {active_count} |\n"
-    entity_md += f"| Deferred | {deferred_count} |\n"
-    entity_md += f"| Deprecated | {deprecated_count} |\n\n"
+<h2>Status overview</h2>
 
-    entity_md += "## Properties\n\n"
+<table border="1">
+<tr><th>Status</th><th>Count</th></tr>
+<tr><td>Total</td><td>{total_count}</td></tr>
+<tr><td>Active</td><td>{active_count}</td></tr>
+<tr><td>Deferred</td><td>{deferred_count}</td></tr>
+<tr><td>Deprecated</td><td>{deprecated_count}</td></tr>
+</table>
 
-    entity_md += (
-        "| Property | Label | Status | "
-        "Mapping | Mandatory | Repeatable |\n"
-    )
+<h2>Properties</h2>
 
-    entity_md += (
-        "| --- | --- | --- | "
-        "--- | --- | --- |\n"
-    )
+<table border="1">
+<tr>
+<th>Property</th>
+<th>Label</th>
+<th>Status</th>
+<th>Mapping</th>
+<th>Mandatory</th>
+<th>Repeatable</th>
+</tr>
+"""
 
     for (
         prop_id,
@@ -256,30 +263,32 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         repeatable,
     ) in entity_index_rows:
 
-        entity_md += (
-            f"| [{prop_id}]({prop_id}.md)"
-            f" | {prop_label}"
-            f" | {status}"
-            f" | {mapping}"
-            f" | {mandatory}"
-            f" | {repeatable} |\n"
+        entity_html += (
+            f"<tr>"
+            f"<td><a href='{prop_id}.md'>{prop_id}</a></td>"
+            f"<td>{prop_label}</td>"
+            f"<td>{status}</td>"
+            f"<td>{mapping}</td>"
+            f"<td>{mandatory}</td>"
+            f"<td>{repeatable}</td>"
+            f"</tr>\n"
         )
 
+    entity_html += """
+</table>
+
+</body>
+</html>
+"""
+
     with open(
-        docs_folder / "index.md",
+        docs_folder / "index.html",
         "w",
         encoding="utf-8"
     ) as f:
-        f.write(entity_md)
+        f.write(entity_html)
 
-    print("Created:", docs_folder / "index.md")
-
-site_md = "# RDA Application Profile workspace \n\n"
-
-site_md += (
-    "> Workspace for the development of an RDA Application Profile. "
-    "Generated from DCTAP source files.\n\n"
-)
+    print("Created:", docs_folder / "index.html")
 
 site_html = """
 <!DOCTYPE html>
@@ -301,7 +310,7 @@ Generated from DCTAP source files.
 
 for entity in sorted(entities):
     site_html += (
-        f'<li><a href="{entity}/index.md">{entity}</a></li>\n'
+        f'<li><a href="{entity}/index.html">{entity}</a></li>\n'
     )
 
 site_html += """

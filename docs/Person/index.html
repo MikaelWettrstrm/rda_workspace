@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Person</title>
+</head>
+<body>
+
+<h1>Person</h1>
+
+<p><strong>Completion:</strong> ████░░░░░░ 42%</p>
+
+<h2>Status overview</h2>
+
+<table border="1">
+<tr><th>Status</th><th>Count</th></tr>
+<tr><td>Total</td><td>25</td></tr>
+<tr><td>Active</td><td>10</td></tr>
+<tr><td>Deferred</td><td>14</td></tr>
+<tr><td>Deprecated</td><td>0</td></tr>
+</table>
+
+<h2>Properties</h2>
+
+<table border="1">
+<tr>
+<th>Property</th>
+<th>Label</th>
+<th>Status</th>
+<th>Mapping</th>
+<th>Mandatory</th>
+<th>Repeatable</th>
+</tr>
+<tr><td><a href='name.md'>name</a></td><td>Namn</td><td>active</td><td>closeMatch</td><td>TRUE</td><td>FALSE</td></tr>
+<tr><td><a href='familyName.md'>familyName</a></td><td>Efternamn</td><td>active</td><td>exactMatch</td><td>TRUE</td><td>FALSE</td></tr>
+<tr><td><a href='givenName.md'>givenName</a></td><td>Förnamn</td><td>active</td><td>exactMatch</td><td>TRUE</td><td>FALSE</td></tr>
+<tr><td><a href='birthDate.md'>birthDate</a></td><td>Födelsedatum</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td></tr>
+<tr><td><a href='deathDate.md'>deathDate</a></td><td>Dödsdatum</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td></tr>
+<tr><td><a href='lifeSpan.md'>lifeSpan</a></td><td>Födelsetid och/eller dödstid</td><td>deferred</td><td></td><td>FALSE</td><td>FALSE</td></tr>
+<tr><td><a href='activityStartDate.md'>activityStartDate</a></td><td>Verksamhetens starttid</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>FALSE</td></tr>
+<tr><td><a href='activityEndDate.md'>activityEndDate</a></td><td>Verksamhetens sluttid</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>FALSE</td></tr>
+<tr><td><a href='fieldOfActivity.md'>fieldOfActivity</a></td><td>Verksamhetsområde</td><td>active</td><td>exactMatch</td><td></td><td></td></tr>
+<tr><td><a href='fullerFormOfName.md'>fullerFormOfName</a></td><td>Fullständig namnform</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td></tr>
+<tr><td><a href='hasOccupation.md'>hasOccupation</a></td><td>Yrke eller sysselsättning</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td></tr>
+<tr><td><a href='hasAffiliation.md'>hasAffiliation</a></td><td>Organisatorisk tillhörighet</td><td></td><td></td><td>FALSE</td><td>TRUE</td></tr>
+<tr><td><a href='identifiedBy.md'>identifiedBy</a></td><td>Identifikator</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td></tr>
+<tr><td><a href='description.md'>description</a></td><td>Beskrivning</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td></tr>
+<tr><td><a href='titlesAndOtherWordsAssociatedWithAName.md'>titlesAndOtherWordsAssociatedWithAName</a></td><td>Titel eller övrig beteckning</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td></tr>
+<tr><td><a href='hasOtherAttributes.md'>hasOtherAttributes</a></td><td>Övrig beteckning</td><td>deferred</td><td></td><td></td><td></td></tr>
+<tr><td><a href='titleOfPerson.md'>titleOfPerson</a></td><td>Titel/officiell rang för kunglig, adlig eller religiös person</td><td>deferred</td><td></td><td></td><td></td></tr>
+<tr><td><a href='nationality.md'>nationality</a></td><td>Nationalitet/Verksamhetsland</td><td>deferred</td><td></td><td>FALSE</td><td>TRUE</td></tr>
+<tr><td><a href='birthPlace.md'>birthPlace</a></td><td>Födelseplats</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td></tr>
+<tr><td><a href='deathPlace.md'>deathPlace</a></td><td>Dödsplats</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td></tr>
+<tr><td><a href='associatedLanguage.md'>associatedLanguage</a></td><td>Språk</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td></tr>
+<tr><td><a href='seeAlso.md'>seeAlso</a></td><td>Se även</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td></tr>
+<tr><td><a href='variant.md'>variant</a></td><td>Variantnamn</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td></tr>
+<tr><td><a href='cataloguersNote.md'>cataloguersNote</a></td><td>Katalogisatörens anmärkning</td><td>deferred</td><td></td><td>TRUE</td><td>TRUE</td></tr>
+<tr><td><a href='sourceConsulted.md'>sourceConsulted</a></td><td>Konsulterad källa</td><td>deferred</td><td></td><td></td><td></td></tr>
+
+</table>
+
+</body>
+</html>
