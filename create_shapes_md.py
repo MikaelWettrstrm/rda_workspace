@@ -273,3 +273,24 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         f.write(entity_md)
 
     print("Created:", docs_folder / "index.md")
+
+site_md = "# RDA Application Profile workspace \n\n"
+
+site_md += (
+    "> Workspace for the development of an RDA Application Profile. "
+    "Generated from DCTAP source files.\n\n"
+)
+
+site_md += "## Entities\n\n"
+
+for entity in sorted(entities):
+    site_md += f"- [{entity}]({entity}/index.md)\n"
+
+with open(
+    DOCS_DIR / "index.md",
+    "w",
+    encoding="utf-8"
+) as f:
+    f.write(site_md)
+
+print("Created:", DOCS_DIR / "index.md")
