@@ -281,16 +281,41 @@ site_md += (
     "Generated from DCTAP source files.\n\n"
 )
 
-site_md += "## Entities\n\n"
+site_html = """
+<!DOCTYPE html>
+<html>
+<head>
+<title>RDA Application Profile Workspace</title>
+</head>
+<body>
+
+<h1>RDA Application Profile Workspace</h1>
+
+<p>
+Workspace for the development of an RDA Application Profile.
+Generated from DCTAP source files.
+</p>
+
+<ul>
+"""
 
 for entity in sorted(entities):
-    site_md += f"- [{entity}]({entity}/index.md)\n"
+    site_html += (
+        f'<li><a href="{entity}/index.md">{entity}</a></li>\n'
+    )
+
+site_html += """
+</ul>
+
+</body>
+</html>
+"""
 
 with open(
-    DOCS_DIR / "index.md",
+    DOCS_DIR / "index.html",
     "w",
     encoding="utf-8"
 ) as f:
-    f.write(site_md)
+    f.write(site_html)
 
-print("Created:", DOCS_DIR / "index.md")
+print("Created:", DOCS_DIR / "index.html")
