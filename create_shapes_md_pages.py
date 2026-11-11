@@ -294,26 +294,31 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         scope_note
     ) in entity_index_rows:
 
+        property_url = (
+        f"https://github.com/MikaelWettrstrm/rda_workspace/main/docs/{entity}/{prop_id}.md"
+        f"{entity}/{prop_id}.md"
+    )
+
         notes = ""
 
         if modelling_note:
-           notes += f"<a href='{prop_id}.md'>📝</a> "
+           notes += f"<a href='{property_url}' target='_blank'>📝</a> "
 
         if issue_link:
-            notes += f"<a href='{issue_link}' target='_blank'>🔗</a> "
+            notes += f"<a href='{property_url}' target='_blank'>🔗</a> "
 
         if comment:
-            notes += f"<a href='{prop_id}.md'>💬</a> "
+            notes += f"<a href='{property_url}' target='_blank'>💬</a> "
 
         if scope_note:
-            notes += f"<a href='{prop_id}.md'>📖</a> "
+            notes += f"<a href='{property_url}' target='_blank'>📖</a> "
 
         if marc_21_note:
-            notes += f"<a href='{prop_id}.md'>🏷️</a> "
+            notes += f"<a href='{property_url}' target='_blank'>🏷️</a> "
 
         entity_html += (
             f"<tr>"
-            f"<td><a href='{prop_id}.md'>{prop_id}</a></td>"
+            f"<td><a href='{property_url}' target='_blank'>{prop_id}</a></td>"
             f"<td>{prop_label}</td>"
             f"<td>{status}</td>"
             f"<td>{mapping}</td>"
