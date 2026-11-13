@@ -345,9 +345,9 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
     ) in entity_index_rows:
 
         property_url = (
-            f"https://github.com/MikaelWetterstrom/rda_workspace"
+            f"https://github.com/MikaelWettrstrm/rda_workspace"
             f"/blob/main/docs/{entity}/{prop_id}.md"
-    )  
+        ) 
 
         notes = ""
 
