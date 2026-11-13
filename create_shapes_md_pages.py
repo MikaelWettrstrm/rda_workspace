@@ -16,6 +16,8 @@ PREFIXES = """@prefix sh:   <http://www.w3.org/ns/shacl#> .
 entities = []
 
 for csv_file in ENTITIES_DIR.glob("*.csv"):
+    entities = []
+    entity_summary = []
 
     df = pd.read_csv(
         csv_file,
@@ -228,7 +230,16 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         if in_scope > 0
         else 100
     )
-
+    entity_summary.append(
+    (
+        entity,
+        total_count,
+        active_count,
+        deferred_count,
+        deprecated_count,
+        completion
+    )
+)
     filled = round(completion / 10)
     bar = "█" * filled + "░" * (10 - filled)
 
@@ -334,8 +345,8 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
     ) in entity_index_rows:
 
         property_url = (
-        f"https://github.com/MikaelWettrstrm/rda_workspace"
-        f"/blob/main/docs/{entity}/{prop_id}.md"
+            f"https://github.com/MikaelWetterstrom/rda_workspace"
+            f"/blob/main/docs/{entity}/{prop_id}.md"
     )
 
         notes = ""
@@ -390,6 +401,46 @@ site_html = """
 <html>
 <head>
 <title>RDA Application Profile Workspace</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 2em;
+    max-width: 1200px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #d0d0d0;
+    padding: 0.4em 0.6em;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #eef6ff;
+}
+
+a {
+    text-decoration: none;
+    color: #005a9c;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+</style>
 </head>
 <body>
 
@@ -400,16 +451,38 @@ Workspace for the development of an RDA Application Profile.
 Generated from DCTAP source files.
 </p>
 
-<ul>
+<table>
+<tr>
+<th>Entity</th>
+<th>Properties</th>
+<th>Active</th>
+<th>Deferred</th>
+<th>Deprecated</th>
+<th>Completion</th>
+</tr>
 """
 
-for entity in sorted(entities):
-    site_html += (
-        f'<li><a href="{entity}/index.html">{entity}</a></li>\n'
-    )
+for (
+    entity,
+    total_count,
+    active_count,
+    deferred_count,
+    deprecated_count,
+    completion
+) in sorted(entity_summary):
 
+    site_html += (
+        f"<tr>"
+        f"<td><a href='{entity}/index.html'>{entity}</a></td>"
+        f"<td>{total_count}</td>"
+        f"<td>{active_count}</td>"
+        f"<td>{deferred_count}</td>"
+        f"<td>{deprecated_count}</td>"
+        f"<td>{completion}%</td>"
+        f"</tr>\n"
+    )
 site_html += """
-</ul>
+</table>
 
 </body>
 </html>
