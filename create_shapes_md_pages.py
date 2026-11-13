@@ -14,10 +14,10 @@ PREFIXES = """@prefix sh:   <http://www.w3.org/ns/shacl#> .
 """
 
 entities = []
+entity_summary = []
 
 for csv_file in ENTITIES_DIR.glob("*.csv"):
-    entities = []
-    entity_summary = []
+    
 
     df = pd.read_csv(
         csv_file,
@@ -347,7 +347,7 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         property_url = (
             f"https://github.com/MikaelWetterstrom/rda_workspace"
             f"/blob/main/docs/{entity}/{prop_id}.md"
-    )
+    )  
 
         notes = ""
 
