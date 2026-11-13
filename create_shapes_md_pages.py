@@ -237,6 +237,45 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
 <html>
 <head>
     <title>{entity}</title>
+    <style>
+            body {{
+                font-family: Arial, sans-serif;
+                margin: 2em;
+            }}
+
+            table {{
+                border-collapse: collapse;
+                width: 100%;
+            }}
+
+            th,
+            td {{
+                border: 1px solid #d0d0d0;
+                padding: 0.4em 0.6em;
+                text-align: left;
+            }}
+
+            th {{
+                background-color: #f2f2f2;
+            }}
+
+            tr:nth-child(even) {{
+                background-color: #f9f9f9;
+            }}
+
+            tr:hover {{
+                background-color: #eef6ff;
+            }}
+
+            a {{
+                text-decoration: none;
+            }}
+
+            a:hover {{
+                text-decoration: underline;
+            }}
+    </style>
+
 </head>
 <body>
 
@@ -295,8 +334,8 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
     ) in entity_index_rows:
 
         property_url = (
-        f"https://github.com/MikaelWettrstrm/rda_workspace/main/docs/{entity}/{prop_id}.md"
-        f"{entity}/{prop_id}.md"
+        f"https://github.com/MikaelWettrstrm/rda_workspace"
+        f"/blob/main/docs/{entity}/{prop_id}.md"
     )
 
         notes = ""
@@ -305,7 +344,7 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
            notes += f"<a href='{property_url}' target='_blank'>📝</a> "
 
         if issue_link:
-            notes += f"<a href='{property_url}' target='_blank'>🔗</a> "
+            notes += f"<a href='{issue_link}' target='_blank'>🔗</a> "
 
         if comment:
             notes += f"<a href='{property_url}' target='_blank'>💬</a> "

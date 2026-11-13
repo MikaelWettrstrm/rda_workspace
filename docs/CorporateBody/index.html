@@ -3,6 +3,45 @@
 <html>
 <head>
     <title>CorporateBody</title>
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 2em;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th,
+            td {
+                border: 1px solid #d0d0d0;
+                padding: 0.4em 0.6em;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            tr:hover {
+                background-color: #eef6ff;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+
 </head>
 <body>
 
@@ -42,17 +81,17 @@
 <th>MARC 21</th>
 <th>Notes</th>
 </tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/name.mdCorporateBody/name.md' target='_blank'>name</a></td><td>Namn</td><td>active</td><td>closeMatch</td><td>TRUE</td><td>FALSE</td><td>preferred name of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/name.mdCorporateBody/name.md' target='_blank'>💬</a> </td></tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/activityStartDate.mdCorporateBody/activityStartDate.md' target='_blank'>activityStartDate</a></td><td>Verksamhetens starttid</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>FALSE</td><td>period of activity of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/activityStartDate.mdCorporateBody/activityStartDate.md' target='_blank'>💬</a> </td></tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/activityEndDate.mdCorporateBody/activityEndDate.md' target='_blank'>activityEndDate</a></td><td>Verksamhetens sluttid</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>FALSE</td><td>period of activity of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/activityEndDate.mdCorporateBody/activityEndDate.md' target='_blank'>💬</a> </td></tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/establishmentDate.mdCorporateBody/establishmentDate.md' target='_blank'>establishmentDate</a></td><td>Tid för grundande</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td><td>date of establishment</td><td></td><td></td></tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/terminationDate.mdCorporateBody/terminationDate.md' target='_blank'>terminationDate</a></td><td>Tid för upphörande</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td><td>date of termination</td><td></td><td></td></tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/description.mdCorporateBody/description.md' target='_blank'>description</a></td><td>Beskrivning</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td><td>note on corporate body</td><td></td><td></td></tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/Jurisdiction.mdCorporateBody/Jurisdiction.md' target='_blank'>Jurisdiction</a></td><td>Geografisk jurisdiction</td><td>active</td><td></td><td>FALSE</td><td>FALSE</td><td>place governed</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/Jurisdiction.mdCorporateBody/Jurisdiction.md' target='_blank'>📝</a> <a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/Jurisdiction.mdCorporateBody/Jurisdiction.md' target='_blank'>📖</a> </td></tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/fieldOfActivity.mdCorporateBody/fieldOfActivity.md' target='_blank'>fieldOfActivity</a></td><td>Verksamhetsområde</td><td>deprecated</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td><td>field of activity of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/fieldOfActivity.mdCorporateBody/fieldOfActivity.md' target='_blank'>💬</a> </td></tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/seeAlso.mdCorporateBody/seeAlso.md' target='_blank'>seeAlso</a></td><td>Se även</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td><td>related entity of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/seeAlso.mdCorporateBody/seeAlso.md' target='_blank'>📝</a> <a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/seeAlso.mdCorporateBody/seeAlso.md' target='_blank'>💬</a> </td></tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/variant.mdCorporateBody/variant.md' target='_blank'>variant</a></td><td>Variantnamn</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td><td>variant name of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/variant.mdCorporateBody/variant.md' target='_blank'>📝</a> <a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/variant.mdCorporateBody/variant.md' target='_blank'>🏷️</a> </td></tr>
-<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/main/docs/CorporateBody/cataloguersNote.mdCorporateBody/cataloguersNote.md' target='_blank'>cataloguersNote</a></td><td>Katalogisatörens anmärkning</td><td>active</td><td>closeMatch</td><td>TRUE</td><td>TRUE</td><td>source consulted</td><td></td><td></td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/name.md' target='_blank'>name</a></td><td>Namn</td><td>active</td><td>closeMatch</td><td>TRUE</td><td>FALSE</td><td>preferred name of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/name.md' target='_blank'>💬</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/activityStartDate.md' target='_blank'>activityStartDate</a></td><td>Verksamhetens starttid</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>FALSE</td><td>period of activity of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/activityStartDate.md' target='_blank'>💬</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/activityEndDate.md' target='_blank'>activityEndDate</a></td><td>Verksamhetens sluttid</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>FALSE</td><td>period of activity of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/activityEndDate.md' target='_blank'>💬</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/establishmentDate.md' target='_blank'>establishmentDate</a></td><td>Tid för grundande</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td><td>date of establishment</td><td></td><td></td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/terminationDate.md' target='_blank'>terminationDate</a></td><td>Tid för upphörande</td><td>active</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td><td>date of termination</td><td></td><td></td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/description.md' target='_blank'>description</a></td><td>Beskrivning</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td><td>note on corporate body</td><td></td><td></td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/Jurisdiction.md' target='_blank'>Jurisdiction</a></td><td>Geografisk jurisdiction</td><td>active</td><td></td><td>FALSE</td><td>FALSE</td><td>place governed</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/Jurisdiction.md' target='_blank'>📝</a> <a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/Jurisdiction.md' target='_blank'>📖</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/fieldOfActivity.md' target='_blank'>fieldOfActivity</a></td><td>Verksamhetsområde</td><td>deprecated</td><td>exactMatch</td><td>FALSE</td><td>TRUE</td><td>field of activity of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/fieldOfActivity.md' target='_blank'>💬</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/seeAlso.md' target='_blank'>seeAlso</a></td><td>Se även</td><td>active</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td><td>related entity of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/seeAlso.md' target='_blank'>📝</a> <a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/seeAlso.md' target='_blank'>💬</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/variant.md' target='_blank'>variant</a></td><td>Variantnamn</td><td>deferred</td><td>closeMatch</td><td>FALSE</td><td>TRUE</td><td>variant name of corporate body</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/variant.md' target='_blank'>📝</a> <a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/variant.md' target='_blank'>🏷️</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/CorporateBody/cataloguersNote.md' target='_blank'>cataloguersNote</a></td><td>Katalogisatörens anmärkning</td><td>active</td><td>closeMatch</td><td>TRUE</td><td>TRUE</td><td>source consulted</td><td></td><td></td></tr>
 
 </table>
 
