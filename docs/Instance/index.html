@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instance</title>
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 2em;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th,
+            td {
+                border: 1px solid #d0d0d0;
+                padding: 0.4em 0.6em;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            tr:hover {
+                background-color: #eef6ff;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+
+</head>
+<body>
+
+<h1>Instance</h1>
+
+<p><strong>Completion:</strong> ░░░░░░░░░░ 0%</p>
+
+<p>
+📝 Modelling note |
+📖 Scope note |
+🏷️ MARC 21 note |
+💬 Comment |
+🔗 Issue link
+</p>
+
+<h2>Status overview</h2>
+
+<table border="1">
+<tr><th>Status</th><th>Count</th></tr>
+<tr><td>Total</td><td>2</td></tr>
+<tr><td>Active</td><td>0</td></tr>
+<tr><td>Deferred</td><td>1</td></tr>
+<tr><td>Deprecated</td><td>0</td></tr>
+</table>
+
+<h2>Properties</h2>
+
+<table border="1">
+<tr>
+<th>Property</th>
+<th>Label</th>
+<th>Status</th>
+<th>Mapping</th>
+<th>Mandatory</th>
+<th>Repeatable</th>
+<th>RDA Label</th>
+<th>MARC 21</th>
+<th>Notes</th>
+</tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Instance/manifestationStatement.md' target='_blank'>manifestationStatement</a></td><td>manifestationsuppgift</td><td></td><td></td><td>FALSE</td><td>FALSE</td><td>manifestation statement</td><td>881 $a</td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Instance/manifestationStatement.md' target='_blank'>📝</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Instance/manufactureStatement.md' target='_blank'>manufactureStatement</a></td><td>tillverkningsuppgift</td><td>deferred</td><td>exactMatch</td><td>FALSE</td><td>FALSE</td><td>manifestation manufacture statement</td><td>881 $h Obs! finns 2 i RDA, se kommentar</td><td><a href='https://kbse.atlassian.net/jira/' target='_blank'>🔗</a> <a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Instance/manufactureStatement.md' target='_blank'>💬</a> </td></tr>
+
+</table>
+
+</body>
+</html>

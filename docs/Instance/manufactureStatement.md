@@ -1,7 +1,7 @@
 # tillverkningsuppgift (Deferred)
 
 <table>
-<tr><td>shapeID</td><td>Instans</td></tr>
+<tr><td>shapeID</td><td>Instance</td></tr>
 <tr><td>propertyID</td><td>manufactureStatement</td></tr>
 <tr><td>propertyLabel</td><td>tillverkningsuppgift</td></tr>
 <tr><td>definition</td><td>Ett påstående i resursen som har med tryck, kopieriring… eller annan tillverkningsmetod att göra</td></tr>

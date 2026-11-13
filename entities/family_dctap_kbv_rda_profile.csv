@@ -1,0 +1,2 @@
+shapeID;propertyID;propertyLabel;definition;scopeNote;mandatory;repeatable;valueNodeType;valueDataType;kbvIRI;rdaLabel;rdaIRI;mapping;status;severity;message;marc21;marc21Note;modellingNote;normalizationNote;comRequired;issueLink;comment
+Family;name;Namn;En familj eller släkts namn;;TRUE;FALSE;Literal;xsd:string;https://id.kb.se/vocab/name;name of family;http://rdaregistry.info/Elements/a/P50061;closeMatch;active;violation;Obligatoriskt…;;;;;TRUE;https://kbse.atlassian.net/jira/;

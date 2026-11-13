@@ -1,7 +1,7 @@
 # manifestationsuppgift
 
 <table>
-<tr><td>shapeID</td><td>Instans</td></tr>
+<tr><td>shapeID</td><td>Instance</td></tr>
 <tr><td>propertyID</td><td>manifestationStatement</td></tr>
 <tr><td>propertyLabel</td><td>manifestationsuppgift</td></tr>
 <tr><td>definition</td><td>Ett påstående i resursen som representerar hur resursen framställer sig själv</td></tr>
