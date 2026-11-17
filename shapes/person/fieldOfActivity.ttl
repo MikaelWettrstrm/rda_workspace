@@ -6,4 +6,6 @@
 kbv:fieldOfActivityShape
     a sh:PropertyShape ;
     sh:path kbv:fieldOfActivity ;
-    skos:exactMatch <http://rdaregistry.info/Elements/a/P50100> .
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    sh:deactivated true .

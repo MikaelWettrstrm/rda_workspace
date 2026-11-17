@@ -6,4 +6,5 @@
 kbv:sourceConsultedShape
     a sh:PropertyShape ;
     sh:path kbv:sourceConsulted ;
+    skos:exactMatch <http://rdaregistry.info/Elements/w/P10406> ;
     sh:deactivated true .

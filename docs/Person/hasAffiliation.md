@@ -10,6 +10,8 @@
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/hasAffiliation</td></tr>
 <tr><td>RDA</td><td>person member of corporate body</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50030</td></tr>
+<tr><td>mapping</td><td>narrowMatch</td></tr>
+<tr><td>modellingNote</td><td>KBV-egenskapen är generisk och kan användas på alla agenttyper; RDA egenskapen är specifik för varje agenttyp; (MW)</td></tr>
 <tr><td>normalizationNote</td><td>https://api.triplydb.com/s/xe-n3pvp7</td></tr>
 <tr><td>comment</td><td>Anges i Beskrivning (Note on person) eller som en relation (länka).? kolla också isMemberOf</td></tr>
 </table>

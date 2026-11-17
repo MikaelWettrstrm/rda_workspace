@@ -12,9 +12,9 @@
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/identifiedBy</td></tr>
 <tr><td>RDA</td><td>identifier for person</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50094</td></tr>
-<tr><td>mapping</td><td>closeMatch</td></tr>
+<tr><td>mapping</td><td>narrowMatch</td></tr>
 <tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
-<tr><td>modellingNote</td><td>Ange URI direkt under Exakt match</td></tr>
+<tr><td>modellingNote</td><td>Ange URI direkt under Exakt match. KBV-egenskapen är generisk; RDA egenskapen är specifik för varje agenttyp; (MW)</td></tr>
 <tr><td>comment</td><td>Vår identifikator (Libris-id) genereras i Adminmetadata, andra identifikatorer anges i Identifikator?</td></tr>
 </table>

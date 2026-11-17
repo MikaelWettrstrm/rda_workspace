@@ -11,6 +11,7 @@
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/cataloguersNote</td></tr>
 <tr><td>RDA</td><td>note on metadata work</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/w/P10402</td></tr>
+<tr><td>mapping</td><td>narrowMatch</td></tr>
 <tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
 <tr><td>message</td><td>"Obligatorisk…". @sv.</td></tr>

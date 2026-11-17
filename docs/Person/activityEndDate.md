@@ -12,7 +12,6 @@
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/activityEndDate</td></tr>
 <tr><td>RDA</td><td>period of activity of person</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50098</td></tr>
-<tr><td>mapping</td><td>closeMatch</td></tr>
 <tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
 <tr><td>marc21</td><td>046 $t</td></tr>

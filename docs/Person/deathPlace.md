@@ -4,7 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>deathPlace</td></tr>
 <tr><td>propertyLabel</td><td>Dödsplats</td></tr>
-<tr><td>definition</td><td>Platsen där personen dog</td></tr>
+<tr><td>definition</td><td>Personens dödsplats</td></tr>
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/deathPlace</td></tr>
