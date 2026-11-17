@@ -4,7 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>name</td></tr>
 <tr><td>propertyLabel</td><td>Namn</td></tr>
-<tr><td>definition</td><td>En persons namn</td></tr>
+<tr><td>definition</td><td>Personens namn (delas med övriga agenter)</td></tr>
 <tr><td>scopeNote</td><td>Namn i rak följd… namn som består av …</td></tr>
 <tr><td>mandatory</td><td>TRUE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>
@@ -16,7 +16,7 @@
 <tr><td>mapping</td><td>closeMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
 <tr><td>severity</td><td>violation</td></tr>
-<tr><td>message</td><td>Obligatoriskt…</td></tr>
+<tr><td>message</td><td>"Obligatoriskt…". @sv.</td></tr>
 <tr><td>comRequired</td><td>TRUE</td></tr>
 <tr><td>issueLink</td><td>https://kbse.atlassian.net/jira/</td></tr>
 <tr><td>comment</td><td>validation på entitetsnivå, inte elementnivå, t.ex. om saknas? Hur skulle det bli om man angav förnamn och efternamn i rak följd? Diskussion krävs om Föredraget namn</td></tr>

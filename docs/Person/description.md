@@ -4,7 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>description</td></tr>
 <tr><td>propertyLabel</td><td>Beskrivning</td></tr>
-<tr><td>definition</td><td>En bred, ostrukturerad beskrivning av en eller flera egenskaper hos en person</td></tr>
+<tr><td>definition</td><td>En bred, ostrukturerad beskrivning av en eller flera egenskaper hos personen</td></tr>
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>

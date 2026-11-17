@@ -4,7 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>givenName</td></tr>
 <tr><td>propertyLabel</td><td>Förnamn</td></tr>
-<tr><td>definition</td><td>En persons individuella namn, komplement till efternamn</td></tr>
+<tr><td>definition</td><td>Personens individuella namn, komplement till efternamnet</td></tr>
 <tr><td>mandatory</td><td>TRUE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>
@@ -15,6 +15,6 @@
 <tr><td>mapping</td><td>exactMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
 <tr><td>severity</td><td>violation</td></tr>
-<tr><td>message</td><td>Obligatoriskt…</td></tr>
+<tr><td>message</td><td>"Obligatoriskt…". @sv.</td></tr>
 <tr><td>comment</td><td>validation på entitetsnivå, inte elementnivå, t.ex. om saknas?</td></tr>
 </table>

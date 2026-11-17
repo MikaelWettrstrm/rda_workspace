@@ -4,7 +4,7 @@
 <tr><td>shapeID</td><td>Person</td></tr>
 <tr><td>propertyID</td><td>activityStartDate</td></tr>
 <tr><td>propertyLabel</td><td>Verksamhetens starttid</td></tr>
-<tr><td>definition</td><td>Personens aktivitetsperiod</td></tr>
+<tr><td>definition</td><td>Personens aktivitetsperiod (delas med övriga agenter)</td></tr>
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>
@@ -16,7 +16,7 @@
 <tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
 <tr><td>marc21</td><td>046 $s</td></tr>
-<tr><td>modellingNote</td><td>slå ihop med sluttid för att skapa ett element</td></tr>
+<tr><td>modellingNote</td><td>slå ihop med sluttid för att skapa en egenskap</td></tr>
 <tr><td>normalizationNote</td><td>Inte mycket använd? https://api.triplydb.com/s/t4tFsCpoK ; https://api.triplydb.com/s/hcUnfPvJr</td></tr>
 <tr><td>comment</td><td>anges om man inte känner till exakt födelse- och/eller dödsår?</td></tr>
 </table>
