@@ -1,5 +1,5 @@
 shapeID;propertyID;propertyLabel;definition;scopeNote;mandatory;repeatable;valueNodeType;valueDataType;valueConstraint;kbvIRI;rdaLabel;rdaIRI;mapping;status;severity;message;marc21;marc21Note;modellingNote;normalizationNote;comRequired;issueLink;comment
-;name;Namn;;;TRUE;FALSE;Literal;xsd:string;;https://id.kb.se/vocab/name;has respondent;http://rdaregistry.info/Elements/w/P10001;narrowMatch;active;violation;"""Obligatoriskt…"". @sv.";;;;;TRUE;https://kbse.atlassian.net/jira/;
+Work;;;;;;;;;;;has respondent;http://rdaregistry.info/Elements/w/P10001;;;;;;;;;TRUE;https://kbse.atlassian.net/jira/;
 Work;identifiedBy;Identifikator;;;;;;;;https://id.kb.se/vocab/identifiedBy;has identifier for work;http://rdaregistry.info/Elements/w/P10002;;;;;;;"KBV-egenskapen är generisk och kan användas på andra entiteter etc. ; RDA egenskapen är specifik för Verk; skos:narrowMatch = The target concept has a narrower, more specific meaning than the source concept. (MW)";;FALSE;;
 ;;;;;;;;;;;has other distinguishing characteristic of work (Deprecated);http://rdaregistry.info/Elements/w/P10003;;;;;;;;;;;
 Work;category;Kategori;;;TRU;TRUE;IRI;;saogf;https://id.kb.se/vocab/category;has category of work;http://rdaregistry.info/Elements/w/P10004;narrowMatch;;violation;"""Obligatoriskt…"". @sv.";;;"KBV-egenskapen är generisk och kan användas på både Instans och Verk; RDA egenskapen är specifik för Verk; skos:narrowMatch = The target concept has a narrower, more specific meaning than the source concept. (MW)";;;;
@@ -363,7 +363,7 @@ Work;language;Språk;;;TRUE;FALSE;IRI;;/language/…;https://id.kb.se/vocab/languag
 ;;;;;;;;;;;is review of RDA entity;http://rdaregistry.info/Elements/w/P10362;;;;;;;;;;;
 ;;;;;;;;;;;is binding of manifestation of;http://rdaregistry.info/Elements/w/P10363;;;;;;;;;;;
 ;;;;;;;;;;;is binding of item of;http://rdaregistry.info/Elements/w/P10364;;;;;;;;;;;
-Work;?;?;;;;;;;;;has extension plan;http://rdaregistry.info/Elements/w/P10365;;;;;;;;;;;
+Work;;;;;;;;;;;has extension plan;http://rdaregistry.info/Elements/w/P10365;;;;;;;;;;;
 ;;;;;;;;;;;has ISSN;http://rdaregistry.info/Elements/w/P10366;;;;;;;;;;;
 ;;;;;;;;;;;has key title;http://rdaregistry.info/Elements/w/P10367;;;;;;;;;;;
 ;;;;;;;;;;;has frequency;http://rdaregistry.info/Elements/w/P10368;;;;;;;;;;;

@@ -205,6 +205,8 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         md += "</table>\n"
 
         print("Created:", docs_folder / f"{property_id}.md")
+        
+        print("GENERATING MARKDOWN:", entity, property_id)
 
         with open(
             docs_folder / f"{property_id}.md",
