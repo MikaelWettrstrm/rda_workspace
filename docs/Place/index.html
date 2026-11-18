@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place</title>
+    <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 2em;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th,
+            td {
+                border: 1px solid #d0d0d0;
+                padding: 0.4em 0.6em;
+                text-align: left;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+
+            tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            tr:hover {
+                background-color: #eef6ff;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+    </style>
+
+</head>
+<body>
+
+<h1>Place</h1>
+
+<p><strong>Completion:</strong> ██████████ 100%</p>
+
+<p>
+📝 Modelling note |
+📖 Scope note |
+🏷️ MARC 21 note |
+💬 Comment |
+🔗 Issue link
+</p>
+
+<h2>Status overview</h2>
+
+<table border="1">
+<tr><th>Status</th><th>Count</th></tr>
+<tr><td>Total</td><td>57</td></tr>
+<tr><td>Active</td><td>0</td></tr>
+<tr><td>Deferred</td><td>0</td></tr>
+<tr><td>Deprecated</td><td>0</td></tr>
+</table>
+
+<h2>Properties</h2>
+
+<table border="1">
+<tr>
+<th>Property</th>
+<th>Label</th>
+<th>Status</th>
+<th>Mapping</th>
+<th>Mandatory</th>
+<th>Repeatable</th>
+<th>RDA Label</th>
+<th>MARC 21</th>
+<th>Notes</th>
+</tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/name.md' target='_blank'>name</a></td><td>Namn</td><td></td><td>narrowMatch</td><td></td><td></td><td>has name of place</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/name.md' target='_blank'>📝</a> <a href='https://kbse.atlassian.net/jira/' target='_blank'>🔗</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/identifiedBy.md' target='_blank'>identifiedBy</a></td><td>Identifikator</td><td></td><td></td><td></td><td></td><td>has identifier for place</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/identifiedBy.md' target='_blank'>📝</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/birthPlace.md' target='_blank'>birthPlace</a></td><td>Födelseplats</td><td></td><td>exactMatch</td><td></td><td></td><td>is place of birth of</td><td></td><td></td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/deathPlace.md' target='_blank'>deathPlace</a></td><td>Dödsplats</td><td></td><td>exactMatch</td><td></td><td></td><td>is place of death of</td><td></td><td></td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/category.md' target='_blank'>category</a></td><td>Kategori</td><td></td><td></td><td>TRU</td><td>TRUE</td><td>has category of place</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/category.md' target='_blank'>📝</a> </td></tr>
+<tr><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/Jurisdiction.md' target='_blank'>Jurisdiction</a></td><td>Geografisk jurisdiction</td><td></td><td></td><td></td><td></td><td>is place governed by</td><td></td><td><a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/Jurisdiction.md' target='_blank'>📝</a> <a href='https://github.com/MikaelWettrstrm/rda_workspace/blob/main/docs/Place/Jurisdiction.md' target='_blank'>📖</a> </td></tr>
+
+</table>
+
+</body>
+</html>
