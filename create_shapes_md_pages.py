@@ -41,6 +41,17 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
     node_shape_properties = []
     entity_index_rows = []
 
+    entity_values = df.loc[
+        df["propertyID"].str.strip() != "", 
+        "shapeID"
+    ].unique()
+
+    if len(entity_values) == 0:
+        print(f"No entity found in {csv_file.name}")
+        continue
+    entity = entity_values[0]
+    print(f"Processing {entity}: {len(df)} CSV rows")
+
     for _, row in df.iterrows():
 
         property_id = row["propertyID"].strip()
