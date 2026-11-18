@@ -43,13 +43,19 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
 
     for _, row in df.iterrows():
 
-        property_id = row["propertyID"]
-        property_label = row["propertyLabel"]
+        property_id = row["propertyID"].strip()
+        property_label = row["propertyLabel"].strip()
+
+        # Skip rows without a valid property ID
+        if not property_id or any(c in property_id for c in '<>:"/\\|?*'):
+            print(f"Skipping invalid propertyID: {property_id!r} in {entity}")
+            continue
 
         mandatory = row.get("mandatory", "")
         repeatable = row.get("repeatable", "")
         value_node_type = row.get("valueNodeType", "")
         value_data_type = row.get("valueDataType", "")
+        valueConstraint_type = row.get("valueConstraintType", "")
 
         kbv_iri = row.get("kbvIRI", "")
         rda_label = row.get("rdaLabel", "")
@@ -109,6 +115,9 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         if value_data_type:
             ttl += f"    sh:datatype {value_data_type} ;\n"
 
+        if valueConstraint_type:
+            ttl += f"    sh:valueConstraint {valueConstraint_type} ;\n"
+
         if mandatory.upper() == "TRUE":
             ttl += "    sh:minCount 1 ;\n"
 
@@ -161,6 +170,7 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
             ("repeatable", repeatable),
             ("valueNodeType", value_node_type),
             ("valueDataType", value_data_type),
+            ("valueConstraintType", valueConstraint_type),
             ("KBV IRI", kbv_iri),
             ("RDA", rda_label),
             ("RDA IRI", rda_iri),
