@@ -7,6 +7,7 @@
 <tr><td>mandatory</td><td>TRU</td></tr>
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>IRI</td></tr>
+<tr><td>valueConstraint</td><td>saogf</td></tr>
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/category</td></tr>
 <tr><td>RDA</td><td>has category of place</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/p/P70044</td></tr>

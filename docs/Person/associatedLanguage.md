@@ -9,6 +9,7 @@
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>Literal</td></tr>
 <tr><td>valueDataType</td><td>xsd:string</td></tr>
+<tr><td>valueConstraint</td><td>languages</td></tr>
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/associatedLanguage</td></tr>
 <tr><td>RDA</td><td>language of person</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50102</td></tr>

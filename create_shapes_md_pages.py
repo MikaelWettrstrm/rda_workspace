@@ -26,31 +26,19 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         dtype=str
     ).fillna("")
 
-    entity = df.iloc[0]["shapeID"]
+    entity = df.iloc[0]["shapeID"].strip()
     entities.append(entity)
 
     shape_folder = SHAPES_DIR / entity
     docs_folder = DOCS_DIR / entity
     
-    print(df.columns.tolist())
-    print(df.head())
+    print(f"Processing {entity}: {len(df)} CSV rows")
 
     shape_folder.mkdir(parents=True, exist_ok=True)
     docs_folder.mkdir(parents=True, exist_ok=True)
 
     node_shape_properties = []
     entity_index_rows = []
-
-    entity_values = df.loc[
-        df["propertyID"].str.strip() != "", 
-        "shapeID"
-    ].unique()
-
-    if len(entity_values) == 0:
-        print(f"No entity found in {csv_file.name}")
-        continue
-    entity = entity_values[0]
-    print(f"Processing {entity}: {len(df)} CSV rows")
 
     for _, row in df.iterrows():
 
@@ -66,7 +54,7 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         repeatable = row.get("repeatable", "")
         value_node_type = row.get("valueNodeType", "")
         value_data_type = row.get("valueDataType", "")
-        valueConstraint_type = row.get("valueConstraintType", "")
+        valueConstraint = row.get("valueConstraint", "")
 
         kbv_iri = row.get("kbvIRI", "")
         rda_label = row.get("rdaLabel", "")
@@ -126,9 +114,6 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         if value_data_type:
             ttl += f"    sh:datatype {value_data_type} ;\n"
 
-        if valueConstraint_type:
-            ttl += f"    sh:valueConstraint {valueConstraint_type} ;\n"
-
         if mandatory.upper() == "TRUE":
             ttl += "    sh:minCount 1 ;\n"
 
@@ -181,7 +166,7 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
             ("repeatable", repeatable),
             ("valueNodeType", value_node_type),
             ("valueDataType", value_data_type),
-            ("valueConstraintType", valueConstraint_type),
+            ("valueConstraint", valueConstraint),
             ("KBV IRI", kbv_iri),
             ("RDA", rda_label),
             ("RDA IRI", rda_iri),
@@ -265,6 +250,11 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
 )
     filled = round(completion / 10)
     bar = "█" * filled + "░" * (10 - filled)
+
+    print(
+        f"Generating index for {entity}: "
+        f"{len(entity_index_rows)} properties"
+    )
 
     entity_html = f"""
 <!DOCTYPE html>
@@ -367,9 +357,13 @@ for csv_file in ENTITIES_DIR.glob("*.csv"):
         scope_note
     ) in entity_index_rows:
 
+        github_base = "https://" + "github.com/"
+        github_repo = "MikaelWettrstrm/rda_workspace"
+
         property_url = (
-            f"https://github.com/MikaelWettrstrm/rda_workspace"
-            f"/blob/main/docs/{entity}/{prop_id}.md"
+            github_base
+            + github_repo
+            + f"/blob/main/docs/{entity}/{prop_id}.md"
         ) 
 
         notes = ""

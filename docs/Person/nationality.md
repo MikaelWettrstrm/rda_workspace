@@ -8,6 +8,7 @@
 <tr><td>mandatory</td><td>FALSE</td></tr>
 <tr><td>repeatable</td><td>TRUE</td></tr>
 <tr><td>valueNodeType</td><td>IRI</td></tr>
+<tr><td>valueConstraint</td><td>countries</td></tr>
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/nationality</td></tr>
 <tr><td>RDA</td><td>country associated with person</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50097</td></tr>

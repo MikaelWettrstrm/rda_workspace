@@ -7,6 +7,7 @@
 <tr><td>mandatory</td><td>TRUE</td></tr>
 <tr><td>repeatable</td><td>FALSE</td></tr>
 <tr><td>valueNodeType</td><td>IRI</td></tr>
+<tr><td>valueConstraint</td><td>/language/…</td></tr>
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/language</td></tr>
 <tr><td>RDA</td><td>has language of representative expression</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/w/P10353</td></tr>

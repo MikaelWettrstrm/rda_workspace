@@ -4,6 +4,7 @@
 <tr><td>shapeID</td><td>Work</td></tr>
 <tr><td>propertyID</td><td>category</td></tr>
 <tr><td>propertyLabel</td><td>Kategori</td></tr>
+<tr><td>valueConstraint</td><td>RDA Content Type</td></tr>
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/category</td></tr>
 <tr><td>RDA</td><td>has content type of representative expression</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/w/P10349</td></tr>
