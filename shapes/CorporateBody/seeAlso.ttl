@@ -8,5 +8,6 @@ kbv:seeAlsoShape
     sh:path kbv:seeAlso ;
     sh:nodeKind sh:IRI ;
     skos:closeMatch <http://rdaregistry.info/Elements/a/P50480> ;
+    sh:deactivated true ;
     sh:severity sh:warning ;
     sh:message "Obligatoriskt…"@sv .

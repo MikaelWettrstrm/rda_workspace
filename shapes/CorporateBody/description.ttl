@@ -6,5 +6,4 @@
 kbv:descriptionShape
     a sh:PropertyShape ;
     sh:path kbv:description ;
-    sh:datatype xsd:string ;
-    skos:closeMatch <http://rdaregistry.info/Elements/a/P50393> .
+    sh:datatype xsd:string .

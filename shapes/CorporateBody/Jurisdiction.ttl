@@ -6,4 +6,5 @@
 kbv:JurisdictionShape
     a sh:PropertyShape ;
     sh:path kbv:Jurisdiction ;
-    sh:maxCount 1 .
+    sh:maxCount 1 ;
+    sh:deactivated true .

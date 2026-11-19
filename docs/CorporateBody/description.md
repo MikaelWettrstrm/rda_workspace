@@ -11,6 +11,7 @@
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/description</td></tr>
 <tr><td>RDA</td><td>note on corporate body</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50393</td></tr>
-<tr><td>mapping</td><td>closeMatch</td></tr>
+<tr><td>mapping</td><td>narrowMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
+<tr><td>modellingNote</td><td>KBV-egenskapen är generisk och kan användas på alla entiteter ; RDA egenskapen är specifik för Corporate body; skos:narrowMatch = The target concept has a narrower, more specific meaning than the source concept. (MW)</td></tr>
 </table>

@@ -1,4 +1,4 @@
-# Se även
+# Se även (Deferred)
 
 <table>
 <tr><td>shapeID</td><td>CorporateBody</td></tr>
@@ -11,7 +11,7 @@
 <tr><td>RDA</td><td>related entity of corporate body</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50480</td></tr>
 <tr><td>mapping</td><td>closeMatch</td></tr>
-<tr><td>status</td><td>active</td></tr>
+<tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
 <tr><td>message</td><td>Obligatoriskt…</td></tr>
 <tr><td>modellingNote</td><td>Fler mer specifika relationer? T.ex. Predecessor och Successor</td></tr>

@@ -9,6 +9,5 @@ kbv:nameShape
     sh:datatype xsd:string ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
-    skos:closeMatch <http://rdaregistry.info/Elements/a/P50041> ;
-    sh:severity sh:warning ;
+    sh:severity sh:violation ;
     sh:message "Obligatoriskt…"@sv .

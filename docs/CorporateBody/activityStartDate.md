@@ -1,4 +1,4 @@
-# Verksamhetens starttid
+# Verksamhetens starttid (Deferred)
 
 <table>
 <tr><td>shapeID</td><td>CorporateBody</td></tr>
@@ -11,8 +11,9 @@
 <tr><td>KBV IRI</td><td>https://id.kb.se/vocab/activityStartDate</td></tr>
 <tr><td>RDA</td><td>period of activity of corporate body</td></tr>
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50236</td></tr>
-<tr><td>mapping</td><td>closeMatch</td></tr>
-<tr><td>status</td><td>active</td></tr>
+<tr><td>mapping</td><td>broadMatch</td></tr>
+<tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
-<tr><td>comment</td><td>slå ihop med …sluttid för att skapa ett element. Validera på xsd:date sträng?</td></tr>
+<tr><td>modellingNote</td><td>slå ihop med …sluttid för att skapa ett element.</td></tr>
+<tr><td>comment</td><td>Validera på xsd:date sträng?</td></tr>
 </table>
