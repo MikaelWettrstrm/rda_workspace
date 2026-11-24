@@ -8,7 +8,7 @@ kbv:manufactureStatementShape
     sh:path kbv:manufactureStatement ;
     sh:datatype xsd:string ;
     sh:maxCount 1 ;
-    skos:exactMatch <http://rdaregistry.info/Elements/m/P30287> ;
+    skos:exactMatch <http://rdaregistry.info/Elements/m/P30109> ;
     sh:deactivated true ;
     sh:severity sh:violation ;
     sh:message "Obligatoriskt…"@sv .
