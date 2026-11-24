@@ -6,5 +6,5 @@
 kbv:associatedLanguageShape
     a sh:PropertyShape ;
     sh:path kbv:associatedLanguage ;
-    sh:datatype xsd:string ;
+    sh:nodeKind sh:IRI ;
     skos:exactMatch <http://rdaregistry.info/Elements/a/P50102> .

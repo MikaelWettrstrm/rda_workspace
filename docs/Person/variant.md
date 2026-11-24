@@ -16,4 +16,5 @@
 <tr><td>severity</td><td>warning</td></tr>
 <tr><td>message</td><td>"Obligatoriskt om nödvändigt…". @sv.</td></tr>
 <tr><td>marc21Note</td><td>I KBV finns ingen egenskap som heter Variantnamn. Variantnamn anges i Variant. Där repeteras alla egenskaper som behövs för att generera alternativa sökingångar i 400 i MARC-exporten.?</td></tr>
+<tr><td>modellingNote</td><td>KBV generisk, RDA specifik</td></tr>
 </table>

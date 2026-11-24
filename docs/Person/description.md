@@ -14,6 +14,6 @@
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50395</td></tr>
 <tr><td>mapping</td><td>narrowMatch</td></tr>
 <tr><td>status</td><td>active</td></tr>
-<tr><td>modellingNote</td><td>KBV-egenskapen är generisk och kan användas på alla agenttyper; RDA egenskapen är specifik för varje agenttyp (MW)</td></tr>
+<tr><td>modellingNote</td><td>KBV-egenskapen är generisk och kan användas på alla agenttyper; RDA egenskapen är specifik för varje agenttyp</td></tr>
 <tr><td>comment</td><td>Även Biographical information finns (a summary of information about the life or history of a person) men vi anser att Note on person är bättre då den ger möjlighet att ange annan information än bara biografisk. Ändra "Beskrivning" till "Anmärkning"?</td></tr>
 </table>

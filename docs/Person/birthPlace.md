@@ -12,5 +12,6 @@
 <tr><td>RDA IRI</td><td>http://rdaregistry.info/Elements/a/P50119</td></tr>
 <tr><td>mapping</td><td>exactMatch</td></tr>
 <tr><td>status</td><td>deferred</td></tr>
+<tr><td>normalizationNote</td><td>https://api.triplydb.com/s/umER9lRLQ</td></tr>
 <tr><td>comment</td><td>Behövs? Ange i Plats förknippad med personen? Ange i Beskrivning?</td></tr>
 </table>

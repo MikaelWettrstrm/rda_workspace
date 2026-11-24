@@ -11,7 +11,6 @@ kbv:PersonShape
     sh:property kbv:birthDateShape ;
     sh:property kbv:deathDateShape ;
     sh:property kbv:fullerFormOfNameShape ;
-    sh:property kbv:hasAffiliationShape ;
     sh:property kbv:descriptionShape ;
     sh:property kbv:associatedLanguageShape ;
     sh:property kbv:seeAlsoShape .

@@ -5,4 +5,5 @@
 
 kbv:hasAffiliationShape
     a sh:PropertyShape ;
-    sh:path kbv:hasAffiliation .
+    sh:path kbv:hasAffiliation ;
+    sh:deactivated true .

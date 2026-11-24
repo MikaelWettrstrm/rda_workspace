@@ -15,7 +15,7 @@
 <tr><td>mapping</td><td>narrowMatch</td></tr>
 <tr><td>status</td><td>deferred</td></tr>
 <tr><td>marc21</td><td>372 $a $0 $1</td></tr>
-<tr><td>modellingNote</td><td>Ta bort, ange i anmärkning om det behövs? KBV-egenskapen är generisk och kan användas på alla agenttyper; RDA egenskapen är specifik för varje agenttyp; (MW)</td></tr>
+<tr><td>modellingNote</td><td>Ta bort, ange i anmärkning om det behövs? KBV-egenskapen är generisk och kan användas på alla agenttyper; RDA egenskapen är specifik för varje agenttyp; ska vi mappa till överordnad egenskap, agent istället för person, för kbv egenskaper som är narrowMatch?</td></tr>
 <tr><td>normalizationNote</td><td>https://api.triplydb.com/s/gcxET1u7w</td></tr>
 <tr><td>comment</td><td>Om något utöver yrke/sysselstättning behöver anges, används Beskrivning (Note on person)</td></tr>
 </table>

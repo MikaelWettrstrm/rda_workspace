@@ -15,7 +15,7 @@
 <tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
 <tr><td>marc21</td><td>046 $s</td></tr>
-<tr><td>modellingNote</td><td>slå ihop med sluttid för att skapa en egenskap</td></tr>
+<tr><td>modellingNote</td><td>slå ihop med sluttid för att skapa en egenskap; ska vi mappa till överordnad egenskap, agent istället för person, för kbv egenskaper som är narrowMatch?</td></tr>
 <tr><td>normalizationNote</td><td>Inte mycket använd? https://api.triplydb.com/s/t4tFsCpoK ; https://api.triplydb.com/s/hcUnfPvJr</td></tr>
 <tr><td>comment</td><td>anges om man inte känner till exakt födelse- och/eller dödsår?</td></tr>
 </table>

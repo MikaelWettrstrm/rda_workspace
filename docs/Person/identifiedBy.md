@@ -15,6 +15,6 @@
 <tr><td>mapping</td><td>narrowMatch</td></tr>
 <tr><td>status</td><td>deferred</td></tr>
 <tr><td>severity</td><td>warning</td></tr>
-<tr><td>modellingNote</td><td>Ange URI direkt under Exakt match. KBV-egenskapen är generisk; RDA egenskapen är specifik för varje agenttyp; (MW)</td></tr>
+<tr><td>modellingNote</td><td>Ange URI direkt under Exakt match. KBV-egenskapen är generisk; RDA egenskapen är specifik för varje agenttyp;</td></tr>
 <tr><td>comment</td><td>Vår identifikator (Libris-id) genereras i Adminmetadata, andra identifikatorer anges i Identifikator?</td></tr>
 </table>
